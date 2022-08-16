@@ -6,13 +6,22 @@ body {
     display: flex;
 }
 
-.flex-item1 {
+.gallery {
     width: 492px;
     height: 508px;
     top: 32px;
+}
+
+.bottom-gallery {
+    margin-top: 24px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.selected {
+    padding: 5px;
+    border: blue solid 2px;
+    border-radius: 10px;
 }
 
 .flex-item2 {
@@ -22,4 +31,8 @@ body {
     border-radius: 10px;
     top: 32px;
     margin-left: 32px;
+}
+
+.nissan-like {
+    display: flex
 }
