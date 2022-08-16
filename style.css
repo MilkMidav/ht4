@@ -2,6 +2,11 @@ body {
     background: #F6F7F9;
 }
 
+p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
 .flex-container {
     display: flex;
 }
@@ -38,4 +43,28 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 40px;
+}
+
+.nissan-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44.8px;
+    color: #1A202C;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    margin-right: 8px;
+}
+
+.reviewer-440 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.64px;
+    letter-spacing: 2%;
+    color: #3D5278;
 }
