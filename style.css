@@ -78,8 +78,9 @@ p {
 }
 
 .capabilities {
-    display: flex;
-
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .type-specification {
@@ -98,4 +99,6 @@ p {
     font-size: 20px;
     line-height: 25.2px;
     color: #3D5278;
+    text-align: right;
+    padding-right: 44px;
 }
