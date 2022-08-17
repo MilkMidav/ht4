@@ -30,8 +30,8 @@ p {
 }
 
 .description {
+    box-sizing: border-box;
     width: 492px;
-    height: 508px;
     background-color: #ffffff;
     border-radius: 10px;
     margin-left: 32px;
@@ -39,6 +39,7 @@ p {
 }
 
 .title {
+    width: 444px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,6 +54,7 @@ p {
 }
 
 .rating {
+    width: 250px;
     display: flex;
     align-items: center;
 }
@@ -69,6 +71,8 @@ p {
 }
 
 .text-description {
+    width: 444px;
+    height: 120px;
     padding-top: 32px;
     padding-bottom: 34px;
     font-weight: 400;
@@ -80,7 +84,7 @@ p {
 .capabilities {
     display: table;
     box-sizing: border-box;
-    width: 100%;
+    width: 444px;
 }
 
 .type-specification {
@@ -101,4 +105,52 @@ p {
     color: #3D5278;
     text-align: right;
     padding-right: 44px;
+}
+
+.discount {
+    color: #1A202C;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35.28px;
+    margin-bottom: 0px;
+}
+
+span {
+    color: #90A3BF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.16px;
+}
+
+.price {
+    color: #90A3BF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+}
+
+.purchase {
+    width: 444px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.rent-buttom {
+    width: 140px;
+    height: 56px;
+    background: #3563E9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
