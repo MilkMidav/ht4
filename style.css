@@ -167,6 +167,8 @@ span {
 .reviews-amount {
     display: flex;
     align-items: center;
+    margin-top: 8px;
+    margin-left: 24px;
 }
 
 .reviews-short {
@@ -195,8 +197,10 @@ span {
 }
 
 .people-rating {
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
+    margin-left: 24px;
 }
 
 .people-information {
@@ -246,6 +250,20 @@ span {
     font-size: 14px;
     line-height: 28px;
     color: #3D5278;
-    margin-left: 73px;
+    margin-left: 96px;
     margin-right: 24px;
+}
+
+.show-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #90A3BF;
 }
