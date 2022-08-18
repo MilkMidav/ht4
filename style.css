@@ -194,17 +194,17 @@ span {
     height: 56px;
 }
 
-.Alex-rating {
+.people-rating {
     display: flex;
     justify-content: space-between;
 }
 
-.Alex-information {
+.people-information {
     display: flex;
     align-items: center;
 }
 
-.alexname {
+.name {
     width: 128px;
     height: 28px;
     font-style: normal;
@@ -215,7 +215,7 @@ span {
     margin-left: 16px;
 }
 
-.alex-profession {
+.profession {
     width: 128px;
     height: 20px;
     font-style: normal;
@@ -238,7 +238,7 @@ span {
     margin-right: 24px;
 }
 
-.text-alex {
+.text-reviev {
     width: 896px;
     height: 56px;
     font-style: normal;
