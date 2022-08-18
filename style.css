@@ -8,15 +8,12 @@ p {
 }
 
 .flex-container {
-  width: 1080px;
-  height: 1024px;
+  max-width: 1080px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .gallery {
-  width: 492px;
-  height: 508px;
   top: 32px;
 }
 
@@ -46,8 +43,7 @@ p {
 
 .description {
   box-sizing: border-box;
-  width: 492px;
-  height: 510px;
+  max-width: 492px;
   background-color: #ffffff;
   border-radius: 10px;
   margin-left: 32px;
@@ -55,11 +51,9 @@ p {
 }
 
 .title {
-  width: 444px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
 }
 
 .nissan-title {
@@ -67,10 +61,10 @@ p {
   font-size: 32px;
   line-height: 44.8px;
   color: #1a202c;
+  margin: 0px;
 }
 
 .rating {
-  width: 250px;
   display: flex;
   align-items: center;
 }
@@ -84,8 +78,6 @@ p {
 }
 
 .text-description {
-  width: 444px;
-  height: 120px;
   padding-top: 32px;
   padding-bottom: 34px;
   font-weight: 400;
@@ -101,8 +93,6 @@ p {
 }
 
 .type-specification {
-  width: 92px;
-  height: 28px;
   font-weight: 400;
   font-size: 20px;
   line-height: 25.2px;
@@ -110,8 +100,6 @@ p {
 }
 
 .specification {
-  width: 92px;
-  height: 28px;
   font-weight: 600;
   font-size: 20px;
   line-height: 25.2px;
@@ -154,8 +142,7 @@ span {
 }
 
 .rent-button {
-  width: 140px;
-  height: 56px;
+  padding: 16px 32px 16px 32px;
   background: #3563e9;
   border-radius: 4px;
   display: flex;
@@ -169,8 +156,7 @@ span {
 }
 
 .reviews-main {
-  width: 1016px;
-  height: 452px;
+  max-width: 1016px;
   background: #ffffff;
   border-radius: 10px;
 }
@@ -183,8 +169,6 @@ span {
 }
 
 .reviews-short {
-  width: 80px;
-  height: 28px;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -193,13 +177,14 @@ span {
 }
 
 .amount {
-  width: 44px;
-  height: 28px;
+  padding: 6px 12px;
+  margin-left: 24px;
   background: #3563e9;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #f6f7f9;
 }
 
 .revisor {
@@ -220,8 +205,6 @@ span {
 }
 
 .name {
-  width: 128px;
-  height: 28px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -231,8 +214,6 @@ span {
 }
 
 .profession {
-  width: 128px;
-  height: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -254,8 +235,6 @@ span {
 }
 
 .text-reviev {
-  width: 896px;
-  height: 56px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
