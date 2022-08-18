@@ -26,10 +26,22 @@ p {
     justify-content: space-between;
 }
 
+.title-photo {
+    width: 492px;
+    height: 356px;
+}
+
 .selected {
     padding: 5px;
     border: blue solid 2px;
     border-radius: 10px;
+    width: 132px;
+    height: 108px;
+}
+
+.cabin-photo {
+    width: 148px;
+    height: 124px;
 }
 
 .description {
@@ -142,7 +154,7 @@ span {
     margin-top: 68px;
 }
 
-.rent-buttom {
+.rent-button {
     width: 140px;
     height: 56px;
     background: #3563E9;
