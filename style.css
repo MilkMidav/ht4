@@ -8,7 +8,10 @@ p {
 }
 
 .flex-container {
+    width: 1080px;
+    height: 1024px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery {
@@ -32,6 +35,7 @@ p {
 .description {
     box-sizing: border-box;
     width: 492px;
+    height: 510px;
     background-color: #ffffff;
     border-radius: 10px;
     margin-left: 32px;
@@ -59,11 +63,9 @@ p {
     align-items: center;
 }
 
-.star {
-    margin-right: 8px;
-}
 
 .reviewer-440 {
+    margin-left: 8px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17.64px;
@@ -153,4 +155,97 @@ span {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.reviews-main {
+    width: 1016px;
+    height: 452px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.reviews-amount {
+    display: flex;
+    align-items: center;
+}
+
+.reviews-short {
+    width: 80px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1A202C;
+}
+
+.amount {
+    width: 44px;
+    height: 28px;
+    background: #3563E9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revisor {
+    width: 56px;
+    height: 56px;
+}
+
+.Alex-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Alex-information {
+    display: flex;
+    align-items: center;
+}
+
+.alexname {
+    width: 128px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1A202C;
+    margin-left: 16px;
+}
+
+.alex-profession {
+    width: 128px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #90A3BF;
+    margin-left: 16px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #90A3BF;
+    margin-right: 24px;
+}
+
+.text-alex {
+    width: 896px;
+    height: 56px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #3D5278;
+    margin-left: 73px;
+    margin-right: 24px;
 }
