@@ -1,281 +1,280 @@
 body {
-    background: #F6F7F9;
+  background: #f6f7f9;
 }
 
 p {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 .flex-container {
-    width: 1080px;
-    height: 1024px;
-    display: flex;
-    flex-wrap: wrap;
+  width: 1080px;
+  height: 1024px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery {
-    width: 492px;
-    height: 508px;
-    top: 32px;
+  width: 492px;
+  height: 508px;
+  top: 32px;
 }
 
 .bottom-gallery {
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title-photo {
-    width: 492px;
-    height: 356px;
+  width: 492px;
+  height: 356px;
 }
 
 .selected {
-    padding: 5px;
-    border: blue solid 2px;
-    border-radius: 10px;
-    width: 132px;
-    height: 108px;
+  padding: 5px;
+  border: blue solid 2px;
+  border-radius: 10px;
+  width: 132px;
+  height: 108px;
 }
 
 .cabin-photo {
-    width: 148px;
-    height: 124px;
+  width: 148px;
+  height: 124px;
 }
 
 .description {
-    box-sizing: border-box;
-    width: 492px;
-    height: 510px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-left: 32px;
-    padding: 24px 24px 32px 24px;
+  box-sizing: border-box;
+  width: 492px;
+  height: 510px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: 32px;
+  padding: 24px 24px 32px 24px;
 }
 
 .title {
-    width: 444px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
+  width: 444px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
 }
 
 .nissan-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44.8px;
-    color: #1A202C;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.8px;
+  color: #1a202c;
 }
 
 .rating {
-    width: 250px;
-    display: flex;
-    align-items: center;
+  width: 250px;
+  display: flex;
+  align-items: center;
 }
 
-
 .reviewer-440 {
-    margin-left: 8px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17.64px;
-    color: #3D5278;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.64px;
+  color: #3d5278;
 }
 
 .text-description {
-    width: 444px;
-    height: 120px;
-    padding-top: 32px;
-    padding-bottom: 34px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 40px;
-    color: #3D5278;
+  width: 444px;
+  height: 120px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #3d5278;
 }
 
 .capabilities {
-    display: table;
-    box-sizing: border-box;
-    width: 444px;
+  display: table;
+  box-sizing: border-box;
+  width: 444px;
 }
 
 .type-specification {
-    width: 92px;
-    height: 28px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25.2px;
-    color: #90A3BF;
+  width: 92px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.2px;
+  color: #90a3bf;
 }
 
 .specification {
-    width: 92px;
-    height: 28px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25.2px;
-    color: #3D5278;
-    text-align: right;
-    padding-right: 44px;
+  width: 92px;
+  height: 28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25.2px;
+  color: #3d5278;
+  text-align: right;
+  padding-right: 44px;
 }
 
 .discount {
-    color: #1A202C;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 35.28px;
-    margin-bottom: 0px;
+  color: #1a202c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35.28px;
+  margin-bottom: 0px;
 }
 
 span {
-    color: #90A3BF;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20.16px;
+  color: #90a3bf;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.16px;
 }
 
 .price {
-    color: #90A3BF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration-line: line-through;
+  color: #90a3bf;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: line-through;
 }
 
 .purchase {
-    width: 444px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 68px;
+  width: 444px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 68px;
 }
 
 .rent-button {
-    width: 140px;
-    height: 56px;
-    background: #3563E9;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
+  width: 140px;
+  height: 56px;
+  background: #3563e9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .reviews-main {
-    width: 1016px;
-    height: 452px;
-    background: #FFFFFF;
-    border-radius: 10px;
+  width: 1016px;
+  height: 452px;
+  background: #ffffff;
+  border-radius: 10px;
 }
 
 .reviews-amount {
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-    margin-left: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: 24px;
 }
 
 .reviews-short {
-    width: 80px;
-    height: 28px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    color: #1A202C;
+  width: 80px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1a202c;
 }
 
 .amount {
-    width: 44px;
-    height: 28px;
-    background: #3563E9;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 44px;
+  height: 28px;
+  background: #3563e9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .revisor {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 
 .people-rating {
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 24px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
 }
 
 .people-information {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .name {
-    width: 128px;
-    height: 28px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    color: #1A202C;
-    margin-left: 16px;
+  width: 128px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1a202c;
+  margin-left: 16px;
 }
 
 .profession {
-    width: 128px;
-    height: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    color: #90A3BF;
-    margin-left: 16px;
+  width: 128px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #90a3bf;
+  margin-left: 16px;
 }
 
 .date {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    color: #90A3BF;
-    margin-right: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: #90a3bf;
+  margin-right: 24px;
 }
 
 .text-reviev {
-    width: 896px;
-    height: 56px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    color: #3D5278;
-    margin-left: 96px;
-    margin-right: 24px;
+  width: 896px;
+  height: 56px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #3d5278;
+  margin-left: 96px;
+  margin-right: 24px;
 }
 
 .show-all {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
-    gap: 8px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #90A3BF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #90a3bf;
 }
