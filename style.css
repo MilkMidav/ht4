@@ -206,7 +206,12 @@ span {
 
 .people-information {
   display: flex;
-  align-items: center;
+}
+
+.small-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .name {
@@ -270,7 +275,13 @@ span {
 .recent {
   display: flex;
   justify-content: space-between;
-  padding-top: 42px;
+  margin: 42px 0px 26px 0px;
+}
+
+.recommendation {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0px 26px 0px;
 }
 
 .recent-car {
@@ -283,6 +294,17 @@ span {
   align-items: center;
   text-align: center;
   color: #90a3bf;
+}
+
+.recommendation-car {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3563E9;
 }
 
 .view {
@@ -313,26 +335,36 @@ span {
 .koenigsegg-img {
   width: 272px;
   height: 84px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nissan-gt-r-img {
   width: 228px;
   height: 72px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rolls-royce-img {
   width: 244px;
   height: 76px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .all-new-rush-terios-img {
   width: 252px;
   height: 112px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cr-v-img {
   width: 254px;
   height: 102px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon-specification {
@@ -375,6 +407,13 @@ span {
 .specification-small {
   display: flex;
   justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #90A3BF;
 }
 
 .gasoline {
@@ -414,8 +453,14 @@ span {
 }
 
 .box-car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 317px;
+  height: 388px;
   border-radius: 10px;
   padding: 24px;
+  box-sizing: border-box;
   background: #FFFFFF;
 }
 
