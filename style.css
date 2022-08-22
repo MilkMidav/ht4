@@ -301,7 +301,9 @@ span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 
 .heart {
   width: 20px;
@@ -344,6 +346,90 @@ span {
   justify-content: space-between;
 }
 
+.name-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name-small {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #1A202C;
+}
+
+.type {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #90A3BF;
+}
+
+.specification-small {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gasoline {
+  display: flex;
+  align-items: center;
+}
+
+.steering {
+  display: flex;
+  align-items: center;
+}
+
+.capacity {
+  display: flex;
+  align-items: center;
+}
+
+.icon-specification {
+  margin-right: 9px;
+}
+
+.amount-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1A202C;
+}
+
 .main-recommendation {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-car {
+  border-radius: 10px;
+  padding: 24px;
+  background: #FFFFFF;
+}
+
+.rent-now-small {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #3563E9;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
 }
