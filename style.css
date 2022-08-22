@@ -296,3 +296,54 @@ span {
   text-align: center;
   color: #3563e9;
 }
+
+.main-recent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.heart {
+  width: 20px;
+  height: 17.8px;
+}
+
+.koenigsegg-img {
+  width: 272px;
+  height: 84px;
+}
+
+.nissan-gt-r-img {
+  width: 228px;
+  height: 72px;
+}
+
+.rolls-royce-img {
+  width: 244px;
+  height: 76px;
+}
+
+.all-new-rush-terios-img {
+  width: 252px;
+  height: 112px;
+}
+
+.cr-v-img {
+  width: 254px;
+  height: 102px;
+}
+
+.icon-specification {
+  width: 20.75px;
+  height: 21.5px;
+}
+
+.title-small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-recommendation {
+  display: flex;
+}
