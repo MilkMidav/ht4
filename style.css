@@ -1,10 +1,10 @@
 body {
   background: #f6f7f9;
-  font-family: Font Jakarta;
+  font-family: font jakarta;
 }
 
 @font-face {
-  font-family: Font Jakarta;
+  font-family: font jakarta;
   src: url(Font/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
 }
 
@@ -305,6 +305,7 @@ span {
 }
 
 .recommendation-car {
+  padding-left: 30px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
