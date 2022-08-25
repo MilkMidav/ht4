@@ -1,10 +1,10 @@
 body {
   background: #f6f7f9;
-  font-family: font jakarta;
+  font-family: font jakarta regular;
 }
 
 @font-face {
-  font-family: font jakarta;
+  font-family: font jakarta regular;
   src: url(Font/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
 }
 
@@ -34,12 +34,18 @@ p {
   justify-content: space-between;
 }
 
+.stars {
+  cursor: pointer;
+}
+
+
 .title-photo {
   width: 492px;
   height: 356px;
 }
 
 .selected {
+  cursor: pointer;
   padding: 5px;
   border: blue solid 2px;
   border-radius: 10px;
@@ -48,6 +54,7 @@ p {
 }
 
 .cabin-photo {
+  cursor: pointer;
   width: 148px;
   height: 124px;
 }
@@ -154,6 +161,8 @@ span {
 }
 
 .rent-button {
+  border: none;
+  cursor: pointer;
   padding: 16px 32px 16px 32px;
   background: #3563e9;
   border-radius: 4px;
@@ -338,6 +347,7 @@ span {
 
 
 .heart {
+  cursor: pointer;
   width: 20px;
   height: 17.8px;
 }
@@ -475,6 +485,7 @@ span {
 }
 
 .rent-now-small {
+  border: none;
   display: flex;
   justify-content: center;
   padding: 10px 20px;
