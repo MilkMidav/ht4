@@ -22,7 +22,6 @@ p {
 }
 
 .gallery {
-  top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,6 +41,20 @@ p {
 .title-photo {
   width: 492px;
   height: 356px;
+}
+
+
+
+.bottom-gallery:hover .cabin-photo {
+  padding: 0px;
+  border: none;
+}
+
+.bottom-gallery .cabin-photo:hover {
+  padding: 5px;
+  border: blue solid 2px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .selected {
