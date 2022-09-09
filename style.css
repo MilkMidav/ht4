@@ -8,6 +8,26 @@ body {
   src: url(Font/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
 }
 
+.text--sm {
+  font-size: 14px;
+}
+
+.text--md {
+  font-size: 20px;
+}
+
+.text--lg {
+  font-size: 32px
+}
+
+.text--normal {
+  font-weight: 400;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
 p {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -27,49 +47,37 @@ p {
   justify-content: space-between;
 }
 
-.bottom-gallery {
+.gallery__title-photo {
+  width: 492px;
+  height: 356px;
+}
+
+.gallery__bottom_gallery {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
 }
 
-.stars {
+.bottom_gallery__photo {
   cursor: pointer;
+  width: 148px;
+  height: 124px;
 }
 
-
-.title-photo {
-  width: 492px;
-  height: 356px;
-}
-
-
-
-.bottom-gallery:hover .cabin-photo {
+.gallery__bottom_gallery:hover .bottom_gallery__photo {
   padding: 0px;
   border: none;
 }
 
-.bottom-gallery .cabin-photo:hover {
+.gallery__bottom_gallery .bottom_gallery__photo:hover {
   padding: 5px;
   border: blue solid 2px;
   border-radius: 10px;
   box-sizing: border-box;
 }
 
-.selected {
+.stars {
   cursor: pointer;
-  padding: 5px;
-  border: blue solid 2px;
-  border-radius: 10px;
-  width: 132px;
-  height: 108px;
-}
-
-.cabin-photo {
-  cursor: pointer;
-  width: 148px;
-  height: 124px;
 }
 
 .description {
@@ -81,68 +89,66 @@ p {
   padding: 24px 24px 32px 24px;
 }
 
-.title {
+.description__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nissan-title {
-  font-weight: 700;
-  font-size: 32px;
+.title__nissan {
   line-height: 44.8px;
   color: #1a202c;
   margin: 0px;
 }
 
-.rating {
+.description__rating {
   display: flex;
   align-items: center;
 }
 
-.reviewer-440 {
+.rating__reviewer-440 {
   margin-left: 8px;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 17.64px;
   color: #3d5278;
 }
 
-.text-description {
+.description__text-description {
   padding-top: 32px;
   padding-bottom: 34px;
-  font-weight: 400;
-  font-size: 20px;
+  letter-spacing: -0.02em;
   line-height: 40px;
   color: #3d5278;
 }
 
-.capabilities {
+.description__capabilities {
   display: table;
   box-sizing: border-box;
   width: 483px;
 }
 
-.type-specification {
-  font-weight: 400;
-  font-size: 20px;
+.capabilities__type_specification {
   line-height: 25.2px;
   color: #90a3bf;
 }
 
-.specification {
-  font-weight: 600;
-  font-size: 20px;
+.capabilities__specification {
   line-height: 25.2px;
   color: #3d5278;
   text-align: right;
   padding-right: 44px;
 }
 
+.description__purchase {
+  width: 444px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 68px;
+}
+
 .discount {
   color: #1a202c;
   font-style: normal;
-  font-weight: 700;
   font-size: 28px;
   line-height: 35.28px;
   margin-top: 0px;
@@ -151,7 +157,6 @@ p {
 
 span {
   color: #90a3bf;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20.16px;
 }
@@ -159,18 +164,9 @@ span {
 .price {
   color: #90a3bf;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: line-through;
-}
-
-.purchase {
-  width: 444px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 68px;
 }
 
 .rent-button {
@@ -183,35 +179,32 @@ span {
   justify-content: center;
   align-items: center;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 
-.reviews-main {
+.reviews_main {
   margin-top: 24px;
   max-width: 1016px;
   background: #ffffff;
   border-radius: 10px;
 }
 
-.reviews-amount {
+.reviews_main__amount {
   display: flex;
   align-items: center;
   margin-top: 8px;
   margin-left: 24px;
 }
 
-.reviews-short {
+.amount__reviews_short {
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
   line-height: 25px;
   color: #1a202c;
 }
 
-.amount {
+.amount__number {
   padding: 6px 12px;
   margin-left: 24px;
   background: #3563e9;
@@ -222,49 +215,44 @@ span {
   color: #f6f7f9;
 }
 
-.revisor {
-  width: 56px;
-  height: 56px;
-}
 
-.people-rating {
+.reviews_main__people_rating {
   display: flex;
   justify-content: space-between;
   margin: 32px 0px 0px 24px;
 }
 
-.people-information {
+.people_rating__people_information {
   display: flex;
 }
 
-.small-info {
+.people_information__revisor {
+  width: 56px;
+  height: 56px;
+}
+
+.people_information__small_info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.name {
+.small_info__name {
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
   line-height: 25px;
   color: #1a202c;
   margin-left: 16px;
 }
 
-.profession {
+.small_info__profession {
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 18px;
   color: #90a3bf;
   margin-left: 16px;
 }
 
-.date {
+.people_rating__date {
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 18px;
   display: flex;
   flex-direction: column;
@@ -274,16 +262,14 @@ span {
   justify-content: space-between;
 }
 
-.text-reviev {
+.text_reviev {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 28px;
   color: #3d5278;
   margin: 12px 24px 0px 96px;
 }
 
-.show-all {
+.show_all {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -298,23 +284,17 @@ span {
   color: #90a3bf;
 }
 
-.car-suggestion {
+.car_suggestion {
   max-width: 1016px;
 }
 
-.recent {
+.car_suggestion__recent {
   display: flex;
   justify-content: space-between;
   margin: 42px 0px 26px 0px;
 }
 
-.recommendation {
-  display: flex;
-  justify-content: space-between;
-  margin: 42px 0px 26px 0px;
-}
-
-.recent-car {
+.recent__text {
   padding-left: 30px;
   font-style: normal;
   font-weight: 600;
@@ -326,166 +306,15 @@ span {
   color: #90a3bf;
 }
 
-.recommendation-car {
-  padding-left: 30px;
+.view {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #3563E9;
 }
 
-.view {
-  cursor: pointer;
-  padding-right: 20px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #3563e9;
-}
-
-.main-recent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-
-.heart {
-  cursor: pointer;
-  width: 20px;
-  height: 17.8px;
-}
-
-.koenigsegg-img {
-  width: 272px;
-  height: 84px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nissan-gt-r-img {
-  width: 228px;
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rolls-royce-img {
-  width: 244px;
-  height: 76px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.all-new-rush-terios-img {
-  width: 252px;
-  height: 112px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cr-v-img {
-  width: 254px;
-  height: 102px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.icon-specification {
-  width: 20.75px;
-  height: 21.5px;
-}
-
-.title-small {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.name-type {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.name-small {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  display: flex;
-  align-items: center;
-  color: #1A202C;
-}
-
-.type {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  color: #90A3BF;
-}
-
-.specification-small {
-  display: flex;
-  justify-content: space-between;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  color: #90A3BF;
-}
-
-.gasoline {
-  display: flex;
-  align-items: center;
-}
-
-.steering {
-  display: flex;
-  align-items: center;
-}
-
-.capacity {
-  display: flex;
-  align-items: center;
-}
-
-.icon-specification {
-  margin-right: 9px;
-}
-
-.amount-small {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1A202C;
-}
-
-.main-recommendation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.box-car {
+.box_car {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -497,7 +326,81 @@ span {
   background: #FFFFFF;
 }
 
-.rent-now-small {
+.box_car__title_small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_small__about_car {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about_car__name {
+  font-style: normal;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #1A202C;
+}
+
+.about_car__type {
+  font-style: normal;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #90A3BF;
+}
+
+.heart {
+  cursor: pointer;
+  width: 20px;
+  height: 17.8px;
+}
+
+.box_car__specification {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #90A3BF;
+}
+
+.specification__gasoline {
+  display: flex;
+  align-items: center;
+}
+
+.specification__steering {
+  display: flex;
+  align-items: center;
+}
+
+.specification__capacity {
+  display: flex;
+  align-items: center;
+}
+
+.icon_specification {
+  width: 20.75px;
+  height: 21.5px;
+  margin-right: 9px;
+}
+
+.box_car__amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  line-height: 25px;
+  color: #1A202C;
+}
+
+.rent_now_small {
   border: none;
   display: flex;
   justify-content: center;
@@ -511,4 +414,87 @@ span {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.koenigsegg_img {
+  width: 272px;
+  height: 84px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nissan_gt_r_img {
+  width: 228px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rolls_royce_img {
+  width: 244px;
+  height: 76px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all_new_rush_terios_img {
+  width: 252px;
+  height: 112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cr_v_img {
+  width: 254px;
+  height: 102px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.car_suggestion__recommendation {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0px 26px 0px;
+}
+
+
+.recommendation__text {
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3563E9;
+}
+
+.recommendation__icon {
+  cursor: pointer;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3563e9;
+}
+
+.main_recent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.main_recommendation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
