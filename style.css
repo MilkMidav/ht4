@@ -8,12 +8,20 @@ body {
   src: url(Font/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
 }
 
+.text {
+  font-size: 16px;
+}
+
 .text--sm {
   font-size: 14px;
 }
 
 .text--md {
   font-size: 20px;
+}
+
+.text--almost_lg {
+  font-size: 28px;
 }
 
 .text--lg {
@@ -24,9 +32,57 @@ body {
   font-weight: 400;
 }
 
+.text--semi_bold {
+  font-weight: 600;
+}
+
 .text--bold {
   font-weight: 700;
 }
+
+.line-height {
+  line-height: 20px;
+}
+
+.line-height--sm {
+  line-height: 18px;
+}
+
+.line-height--md {
+  line-height: 25px;
+}
+
+.line-height--lg {
+  line-height: 35px;
+}
+
+.button-primary {
+  border: none;
+  cursor: pointer;
+  background: #3563e9;
+  color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-primary:hover {
+  background-color: #0743f7;
+}
+
+.button-primary:active {
+  border: black solid 1px;
+}
+
+.button {
+  padding: 16px 32px 16px 32px;
+}
+
+.button--sm {
+  padding: 10px 20px;
+}
+
 
 p {
   margin-block-start: 0px;
@@ -106,13 +162,12 @@ p {
   align-items: center;
 }
 
-.rating__reviewer-440 {
+.rating__reviewers_count {
   margin-left: 8px;
-  line-height: 17.64px;
   color: #3d5278;
 }
 
-.description__text-description {
+.description__text {
   padding-top: 32px;
   padding-bottom: 34px;
   letter-spacing: -0.02em;
@@ -127,18 +182,16 @@ p {
 }
 
 .capabilities__type_specification {
-  line-height: 25.2px;
   color: #90a3bf;
 }
 
 .capabilities__specification {
-  line-height: 25.2px;
   color: #3d5278;
   text-align: right;
   padding-right: 44px;
 }
 
-.description__purchase {
+.description__actions {
   width: 444px;
   display: flex;
   align-items: center;
@@ -149,62 +202,36 @@ p {
 .discount {
   color: #1a202c;
   font-style: normal;
-  font-size: 28px;
-  line-height: 35.28px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 span {
   color: #90a3bf;
-  font-size: 16px;
-  line-height: 20.16px;
 }
 
 .price {
   color: #90a3bf;
   font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
   text-decoration-line: line-through;
 }
 
-.rent-button {
-  border: none;
-  cursor: pointer;
-  padding: 16px 32px 16px 32px;
-  background: #3563e9;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-}
 
-.reviews_main {
+.reviews {
   margin-top: 24px;
   max-width: 1016px;
   background: #ffffff;
   border-radius: 10px;
 }
 
-.reviews_main__amount {
+.reviews__total {
   display: flex;
   align-items: center;
   margin-top: 8px;
   margin-left: 24px;
 }
 
-.amount__reviews_short {
-  font-style: normal;
-  line-height: 25px;
-  color: #1a202c;
-}
-
-.amount__number {
+.amount__text {
   padding: 6px 12px;
   margin-left: 24px;
   background: #3563e9;
@@ -216,7 +243,7 @@ span {
 }
 
 
-.reviews_main__people_rating {
+.reviews__people_rating {
   display: flex;
   justify-content: space-between;
   margin: 32px 0px 0px 24px;
@@ -238,22 +265,18 @@ span {
 }
 
 .small_info__name {
-  font-style: normal;
-  line-height: 25px;
   color: #1a202c;
   margin-left: 16px;
 }
 
 .small_info__profession {
   font-style: normal;
-  line-height: 18px;
   color: #90a3bf;
   margin-left: 16px;
 }
 
 .people_rating__date {
   font-style: normal;
-  line-height: 18px;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -278,9 +301,6 @@ span {
   padding: 20px 0px;
   gap: 8px;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   color: #90a3bf;
 }
 
@@ -288,18 +308,15 @@ span {
   max-width: 1016px;
 }
 
-.car_suggestion__recent {
+.car_suggestion__heading {
   display: flex;
   justify-content: space-between;
   margin: 42px 0px 26px 0px;
 }
 
-.recent__text {
+.heading__text {
   padding-left: 30px;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -308,9 +325,6 @@ span {
 
 .view {
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   color: #3563E9;
 }
 
@@ -340,7 +354,6 @@ span {
 
 .about_car__name {
   font-style: normal;
-  line-height: 25px;
   display: flex;
   align-items: center;
   color: #1A202C;
@@ -348,7 +361,6 @@ span {
 
 .about_car__type {
   font-style: normal;
-  line-height: 18px;
   display: flex;
   align-items: center;
   color: #90A3BF;
@@ -364,7 +376,6 @@ span {
   display: flex;
   justify-content: space-between;
   font-style: normal;
-  line-height: 18px;
   display: flex;
   align-items: center;
   color: #90A3BF;
@@ -396,105 +407,46 @@ span {
   justify-content: space-between;
   align-items: center;
   font-style: normal;
-  line-height: 25px;
   color: #1A202C;
 }
 
-.rent_now_small {
-  border: none;
-  display: flex;
-  justify-content: center;
-  padding: 10px 20px;
-  background: #3563E9;
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-  cursor: pointer;
-}
 
-.koenigsegg_img {
+.sport_car_img {
   width: 272px;
   height: 84px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.nissan_gt_r_img {
-  width: 228px;
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.rolls_royce_img {
-  width: 244px;
-  height: 76px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.all_new_rush_terios_img {
-  width: 252px;
+.suv_car_img {
+  width: 260px;
   height: 112px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.cr_v_img {
-  width: 254px;
-  height: 102px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-
-.car_suggestion__recommendation {
+.car_suggestion__heading {
   display: flex;
   justify-content: space-between;
   margin: 42px 0px 26px 0px;
 }
 
-
-.recommendation__text {
-  padding-left: 30px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #3563E9;
-}
-
-.recommendation__icon {
+.heading__icon {
   cursor: pointer;
   padding-right: 20px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   color: #3563e9;
 }
 
-.main_recent {
+.body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-
-.main_recommendation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
