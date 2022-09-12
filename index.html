@@ -10,319 +10,376 @@
 </head>
 
 <body>
-  <div class="main-section">
-    <div class="flex-container">
-      <div class="gallery">
-        <img class="gallery__title-photo" src="img/Viewall.png" alt="car overview" />
-        <div class="gallery__bottom_gallery">
-          <img class="bottom_gallery__photo" src="img/View1.png" alt="small car" />
-          <img class="bottom_gallery__photo" src="img/View2.png" alt="inside car" />
-          <img class="bottom_gallery__photo" src="img/View3.png" alt="inside car" />
+  <main>
+    <div class="sidebar text--md text--semi_bold">
+      <div class="sidebar__type">
+        <p class="text--smaller text--muted">TYPE</p>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="sport" id="sport" checked>
+          <label for="sport">Sport<span class="text--muted">(10)</span></label>
+        </div>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="suv" id="suv" checked>
+          <label for="suv">SUV<span class="text--muted">(12)</span></label>
+        </div>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="mpv" id="mpv">
+          <label for="mpv">MPV<span class="text--muted">(16)</span></label>
+        </div>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="sedan" id="sedan">
+          <label for="sedan">Sedan<span class="text--muted">(20)</span></label>
+        </div>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="coupe" id="coupe">
+          <label for="coupe">Coupe<span class="text--muted">(14)</span></label>
+        </div>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="hatchback" id="hatchback">
+          <label for="hatchback">Hatchback<span class="text--muted">(14)</span></label>
         </div>
       </div>
-      <div class="description">
-        <div class="description__title">
-          <h2 class="title__nissan text--bold text--lg">Nissan GT-R</h2>
-          <img class="title__heart" src="img/Like.png" alt="like car" />
+      <div class="sidebar__capacity">
+        <p class="text--smaller text--muted">CAPACITY</p>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="2person" id="2person" checked>
+          <label for="person">2 Person<span class="text--muted">(10)</span></label>
         </div>
-        <div class="description__rating">
-          <div class="rating__stars-all">
-            <img class="stars" src="img/stargold.png" alt="star" />
-            <img class="stars" src="img/stargold.png" alt="star" />
-            <img class="stars" src="img/stargold.png" alt="star" />
-            <img class="stars" src="img/stargold.png" alt="star" />
-            <img class="stars" src="img/starfree.png" alt="emptystar" />
-          </div>
-          <p class="rating__reviewers_count text--sm text--normal line-height--sm">440+ Reviewer</p>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="4person" id="4person">
+          <label for="person">4 Person<span class="text--muted">(14)</span></label>
         </div>
-        <p class="description__text text--md text--normal">
-          NISMO has become the embodiment of Nissan's
-          outstanding performance, inspired by the most unforgiving proving
-          ground, the "race track".
-        </p>
-
-        <table class="description__capabilities">
-          <tbody>
-            <tr>
-              <td class="capabilities__type_specification text--normal text--md line-height--md">Type Car</td>
-              <td class="capabilities__specification text--bold text--md line-height--md">Sport</td>
-              <td class="capabilities__type_specification text--normal text--md line-height--md">Capacity</td>
-              <td class="capabilities__specification text--bold text--md line-height--md">2 Person</td>
-            </tr>
-            <tr>
-              <td class="capabilities__type_specification text--normal text--md line-height--md">Steering</td>
-              <td class="capabilities__specification text--bold text--md line-height--md">Manual</td>
-              <td class="capabilities__type_specification text--normal text--md line-height--md">Gasoline</td>
-              <td class="capabilities__specification text--bold text--md line-height--md">70L</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="description__actions">
-          <div>
-            <h2 class="discount text--almost_lg text--bold line-height--lg">$80.00/<span
-                class="text--bold text line-height">days</span></h2>
-            <p class="price text text--bold line-height">$100.00</p>
-          </div>
-          <button class="button button-primary button text text--bold ">Rent Now</button>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="6person" id="6person">
+          <label for="6person">6 Person<span class="text--muted">(12)</span></label>
         </div>
+        <div>
+          <input class="sidebar_check" type="checkbox" name="8person" id="8person" checked>
+          <label for="person">Person<span class="text--muted">(16)</span></label>
+        </div>
+      </div>
+      <div class="sidebar_price">
+        <p class="text--smaller text--muted">PRICE</p>
+        <div>
+          <input class="sidebar_range" type="range" name="price" id="price" min="0" max="100" step="1">
+        </div>
+        <p class="text--md text--semibold">Max.$100</p>
       </div>
     </div>
-    <div class="reviews">
-      <div class="reviews__total">
-        <h2 class="text--bold text--md line-height--md">Reviews</h2>
-        <p class="amount__text text--bold">13</p>
-      </div>
-      <div>
-        <div class="reviews__people_rating">
-          <div class="people_rating__people_information">
-            <img class="people_information__revisor" src="./img/Alex.png" alt="Alex Stanton" />
-            <div class="people_information__small_info">
-              <p class="small_info__name text--bold text--md line-height--md">Alex Stanton</p>
-              <p class="small_info__profession text--normal text--sm line-height--sm">CEO at Bukalapak</p>
-            </div>
+    <div class="main__section">
+      <div class="flex-container">
+        <div class="gallery">
+          <img class="gallery__title-photo" src="img/Viewall.png" alt="car overview" />
+          <div class="gallery__bottom_gallery">
+            <img class="bottom_gallery__photo" src="img/View1.png" alt="small car" />
+            <img class="bottom_gallery__photo" src="img/View2.png" alt="inside car" />
+            <img class="bottom_gallery__photo" src="img/View3.png" alt="inside car" />
           </div>
-          <div class="people_rating__date text--sm text--normal line-height--sm">
-            <p>21 July 2022</p>
-            <div class="stars-all">
+        </div>
+        <div class="description">
+          <div class="description__title">
+            <h2 class="title__nissan text--bold text--xl">Nissan GT-R</h2>
+            <img class="title__heart" src="img/Like.png" alt="like car" />
+          </div>
+          <div class="description__rating">
+            <div class="rating__stars-all">
               <img class="stars" src="img/stargold.png" alt="star" />
               <img class="stars" src="img/stargold.png" alt="star" />
               <img class="stars" src="img/stargold.png" alt="star" />
               <img class="stars" src="img/stargold.png" alt="star" />
               <img class="stars" src="img/starfree.png" alt="emptystar" />
             </div>
+            <p class="rating__reviewers_count text--sm text--normal line-height--sm">440+ Reviewer</p>
+          </div>
+          <p class="description__text text--md text--normal">
+            NISMO has become the embodiment of Nissan's
+            outstanding performance, inspired by the most unforgiving proving
+            ground, the "race track".
+          </p>
+
+          <table class="description__capabilities">
+            <tbody>
+              <tr>
+                <td class="capabilities__type_specification text--normal text--md line-height--md">Type Car</td>
+                <td class="capabilities__specification text--bold text--md line-height--md">Sport</td>
+                <td class="capabilities__type_specification text--normal text--md line-height--md">Capacity</td>
+                <td class="capabilities__specification text--bold text--md line-height--md">2 Person</td>
+              </tr>
+              <tr>
+                <td class="capabilities__type_specification text--normal text--md line-height--md">Steering</td>
+                <td class="capabilities__specification text--bold text--md line-height--md">Manual</td>
+                <td class="capabilities__type_specification text--normal text--md line-height--md">Gasoline</td>
+                <td class="capabilities__specification text--bold text--md line-height--md">70L</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="description__actions">
+            <div>
+              <h2 class="discount text--lg text--bold line-height--lg">$80.00/<span
+                  class="text--muted text--bold text line-height">days</span></h2>
+              <p class="price text text--bold line-height">$100.00</p>
+            </div>
+            <button class="button button-primary button text text--bold ">Rent Now</button>
           </div>
         </div>
-        <p class="text_reviev text--sm text--normal">
-          We are very happy with the service from the MORENT App. Morent has a low
-          price and also a large variety of cars with good and comfortable
-          facilities. In addition, the service provided by the officers is also
-          very friendly and very polite.
-        </p>
       </div>
-      <div>
-        <div class="reviews__people_rating">
-          <div class="people_rating__people_information">
-            <img class="people_information__revisor" src="./img/Skylar.png" alt="Alex Stanton" />
-            <div class="people_information__small_info">
-              <p class="small_info__name text--bold text--md line-height--md">Skylar Dias</p>
-              <p class="small_info__profession text--normal text--sm line-height--sm">CEO at Amazon</p>
+      <div class="reviews">
+        <div class="reviews__total">
+          <h2 class="text--bold text--md line-height--md">Reviews</h2>
+          <p class="amount__text text--bold">13</p>
+        </div>
+        <div>
+          <div class="reviews__people_rating">
+            <div class="people_rating__people_information">
+              <img class="people_information__revisor" src="./img/Alex.png" alt="Alex Stanton" />
+              <div class="people_information__small_info">
+                <p class="small_info__name text--bold text--md line-height--md">Alex Stanton</p>
+                <p class="small_info__profession text--normal text--sm line-height--sm">CEO at Bukalapak</p>
+              </div>
+            </div>
+            <div class="people_rating__date text--sm text--normal line-height--sm">
+              <p>21 July 2022</p>
+              <div class="stars-all">
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/starfree.png" alt="emptystar" />
+              </div>
             </div>
           </div>
-          <div class="people_rating__date text--sm text--normal line-height--sm">
-            <p>20 July 2022</p>
-            <div class="stars-all">
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/starfree.png" alt="emptystar" />
+          <p class="text_reviev text--sm text--normal">
+            We are very happy with the service from the MORENT App. Morent has a low
+            price and also a large variety of cars with good and comfortable
+            facilities. In addition, the service provided by the officers is also
+            very friendly and very polite.
+          </p>
+        </div>
+        <div>
+          <div class="reviews__people_rating">
+            <div class="people_rating__people_information">
+              <img class="people_information__revisor" src="./img/Skylar.png" alt="Alex Stanton" />
+              <div class="people_information__small_info">
+                <p class="small_info__name text--bold text--md line-height--md">Skylar Dias</p>
+                <p class="small_info__profession text--normal text--sm line-height--sm">CEO at Amazon</p>
+              </div>
+            </div>
+            <div class="people_rating__date text--sm text--normal line-height--sm">
+              <p>20 July 2022</p>
+              <div class="stars-all">
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/stargold.png" alt="star" />
+                <img class="stars" src="img/starfree.png" alt="emptystar" />
+              </div>
+            </div>
+          </div>
+          <p class="text_reviev text--sm text--normal">
+            We are greatly helped by the services of the MORENT Application. Morent
+            has low prices and also a wide variety of cars with good and comfortable
+            facilities. In addition, the service provided by the officers is also
+            very friendly and very polite.
+          </p>
+        </div>
+        <div class="show_all text text--semi_bold line-height">
+          <p>Show all</p>
+          <img src="./img/Arrow.png" alt="arrow" />
+        </div>
+      </div>
+
+      <div class="car_suggestion">
+        <div class="car_suggestion__heading">
+          <p class="heading__text text text--semi_bold line-height">Recent car</p>
+          <p class="view text text--semi_bold line-height">View all</p>
+        </div>
+        <div class="body">
+          <div class="box_car">
+            <div class="box_car__title_small">
+              <div class="title_small__about_car">
+                <p class="about_car__name text--bold text--md line-height--md">Koenigsegg</p>
+                <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
+              </div>
+              <img class="heart" src="img/Like.png" alt="like" />
+            </div>
+            <img class="sport_car_img" src="img/koenigsegg.png" alt="car_img" />
+            <div class="box_car__specification text--normal text--sm line-height--sm">
+              <div class="specification__gasoline">
+                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+                <p>90L</p>
+              </div>
+              <div class="specification__steering">
+                <img class="icon_specification" src="img/steering.png" alt="steering" />
+                <p>Manual</p>
+              </div>
+              <div class="specification__capacity">
+                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+                <p>2 People</p>
+              </div>
+            </div>
+            <div class="box_car__amount text--bold text--md line-height--md">
+              <p>$99.00/<span class="text text--muted">day</span></p>
+              <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
+            </div>
+          </div>
+          <div class="box_car">
+            <div class="box_car__title_small">
+              <div class="title_small__about_car">
+                <p class="about_car__name text--bold text--md line-height--md">Nissan GT-R</p>
+                <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
+              </div>
+              <img class="heart" src="img/empty-like.png" alt="like" />
+            </div>
+            <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
+            <div class="box_car__specification text--normal text--sm line-height--sm">
+              <div class="specification__gasoline">
+                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+                <p>80L</p>
+              </div>
+              <div class="specification__steering">
+                <img class="icon_specification" src="img/steering.png" alt="steering" />
+                <p>Manual</p>
+              </div>
+              <div class="specification__capacity">
+                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+                <p>2 People</p>
+              </div>
+            </div>
+            <div class="box_car__amount text--bold text--md line-height--md">
+              <div>
+                <p>$80.00/<span class="text text--muted">days</span></p>
+                <p class="price text--sm line-height">$100.00</p>
+              </div>
+              <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
+            </div>
+
+          </div>
+          <div class="box_car">
+            <div class="box_car__title_small">
+              <div class="title_small__about_car">
+                <p class="about_car__name text--bold text--md line-height--md">Rolls-Royce</p>
+                <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
+              </div>
+              <img class="heart" src="img/empty-like.png" alt="like" />
+            </div>
+            <img class="sport_car_img" src="img/rolls-royce.png" alt="car_img" />
+            <div class="box_car__specification text--normal text--sm line-height--sm">
+              <div class="specification__gasoline">
+                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+                <p>70L</p>
+              </div>
+              <div class="specification__steering">
+                <img class="icon_specification" src="img/steering.png" alt="steering" />
+                <p>Manual</p>
+              </div>
+              <div class="specification__capacity">
+                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+                <p>4 People</p>
+              </div>
+            </div>
+            <div class="box_car__amount text--bold text--md line-height--md">
+              <p>$96.00/<span class="text text--muted">day</span></p>
+              <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="car_suggestion__heading">
+          <p class="heading__text text text--semi_bold line-height">Recommendation car</p>
+          <p class="heading__icon text text--semi_bold line-height">View All</p>
+        </div>
+        <div class="body">
+          <div class="box_car">
+            <div class="box_car__title_small">
+              <div class="title_small__about_car">
+                <p class="about_car__name text--bold text--md line-height--md">All New Rush</p>
+                <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
+              </div>
+              <img class="heart" src="img/empty-like.png" alt="like" />
+            </div>
+            <img class="suv_car_img " src="img/all-new-rush.png" alt="car_img" />
+            <div class="box_car__specification text--normal text--sm line-height--sm">
+              <div class="specification__gasoline">
+                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+                <p>70L</p>
+              </div>
+              <div class="specification__steering">
+                <img class="icon_specification" src="img/steering.png" alt="steering" />
+                <p>Manual</p>
+              </div>
+              <div class="specification__capacity">
+                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+                <p>6 People</p>
+              </div>
+            </div>
+            <div class="box_car__amount text--bold text--md line-height--md">
+              <div>
+                <p>$72.00/<span class="text text--muted">day</span></p>
+                <p class="price text--sm line-height">$80.00</p>
+              </div>
+              <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
+            </div>
+          </div>
+          <div class="box_car">
+            <div class="box_car__title_small">
+              <div class="title_small__about_car">
+                <p class="about_car__name text--bold text--md line-height--md">CR-V</p>
+                <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
+              </div>
+              <img class="heart" src="img/Like.png" alt="like" />
+            </div>
+            <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
+            <div class="box_car__specification text--normal text--sm line-height--sm">
+              <div class="specification__gasoline">
+                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+                <p>80L</p>
+              </div>
+              <div class="specification__steering">
+                <img class="icon_specification" src="img/steering.png" alt="steering" />
+                <p>Manual</p>
+              </div>
+              <div class="specification__capacity">
+                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+                <p>6 People</p>
+              </div>
+            </div>
+            <div class="box_car__amount text--bold text--md line-height--md">
+              <p>80.00$/<span class="text text--muted">day</span></p>
+              <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
+            </div>
+          </div>
+          <div class="box_car">
+            <div class="box_car__title_small">
+              <div class="title_small__about_car">
+                <p class="about_car__name text--bold text--md line-height--md">All New Terios</p>
+                <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
+              </div>
+              <img class="heart" src="img/empty-like.png" alt="like" />
+            </div>
+            <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
+            <div class="box_car__specification text--normal text--sm line-height--sm">
+              <div class="specification__gasoline">
+                <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
+                <p>90L</p>
+              </div>
+              <div class="specification__steering">
+                <img class="icon_specification" src="img/steering.png" alt="steering" />
+                <p>Manual</p>
+              </div>
+              <div class="specification__capacity">
+                <img class="icon_specification" src="img/capacity.png" alt="capacity" />
+                <p>6 People</p>
+              </div>
+            </div>
+            <div class="box_car__amount text--bold text--md line-height--md">
+              <p>74.00$/<span class="text text--muted">day</span></p>
+              <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
           </div>
         </div>
-        <p class="text_reviev text--sm text--normal">
-          We are greatly helped by the services of the MORENT Application. Morent
-          has low prices and also a wide variety of cars with good and comfortable
-          facilities. In addition, the service provided by the officers is also
-          very friendly and very polite.
-        </p>
-      </div>
-      <div class="show_all text text--semi_bold line-height">
-        <p>Show all</p>
-        <img src="./img/Arrow.png" alt="arrow" />
       </div>
     </div>
-
-    <div class="car_suggestion">
-      <div class="car_suggestion__heading">
-        <p class="heading__text text text--semi_bold line-height">Recent car</p>
-        <p class="view text text--semi_bold line-height">View all</p>
-      </div>
-      <div class="body">
-        <div class="box_car">
-          <div class="box_car__title_small">
-            <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line-height--md">Koenigsegg</p>
-              <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
-            </div>
-            <img class="heart" src="img/Like.png" alt="like" />
-          </div>
-          <img class="sport_car_img" src="img/koenigsegg.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--sm line-height--sm">
-            <div class="specification__gasoline">
-              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-              <p>90L</p>
-            </div>
-            <div class="specification__steering">
-              <img class="icon_specification" src="img/steering.png" alt="steering" />
-              <p>Manual</p>
-            </div>
-            <div class="specification__capacity">
-              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-              <p>2 People</p>
-            </div>
-          </div>
-          <div class="box_car__amount text--bold text--md line-height--md">
-            <p>$99.00/<span class="text">day</span></p>
-            <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
-          </div>
-        </div>
-        <div class="box_car">
-          <div class="box_car__title_small">
-            <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line-height--md">Nissan GT-R</p>
-              <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
-            </div>
-            <img class="heart" src="img/empty-like.png" alt="like" />
-          </div>
-          <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--sm line-height--sm">
-            <div class="specification__gasoline">
-              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-              <p>80L</p>
-            </div>
-            <div class="specification__steering">
-              <img class="icon_specification" src="img/steering.png" alt="steering" />
-              <p>Manual</p>
-            </div>
-            <div class="specification__capacity">
-              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-              <p>2 People</p>
-            </div>
-          </div>
-          <div class="box_car__amount text--bold text--md line-height--md">
-            <div>
-              <p>$80.00/<span class="text">days</span></p>
-              <p class="price text--sm line-height">$100.00</p>
-            </div>
-            <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
-          </div>
-
-        </div>
-        <div class="box_car">
-          <div class="box_car__title_small">
-            <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line-height--md">Rolls-Royce</p>
-              <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
-            </div>
-            <img class="heart" src="img/empty-like.png" alt="like" />
-          </div>
-          <img class="sport_car_img" src="img/rolls-royce.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--sm line-height--sm">
-            <div class="specification__gasoline">
-              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-              <p>70L</p>
-            </div>
-            <div class="specification__steering">
-              <img class="icon_specification" src="img/steering.png" alt="steering" />
-              <p>Manual</p>
-            </div>
-            <div class="specification__capacity">
-              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-              <p>4 People</p>
-            </div>
-          </div>
-          <div class="box_car__amount text--bold text--md line-height--md">
-            <p>$96.00/<span class="text">day</span></p>
-            <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
-          </div>
-
-        </div>
-      </div>
-      <div class="car_suggestion__heading">
-        <p class="heading__text text text--semi_bold line-height">Recommendation car</p>
-        <p class="heading__icon text text--semi_bold line-height">View All</p>
-      </div>
-      <div class="body">
-        <div class="box_car">
-          <div class="box_car__title_small">
-            <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line-height--md">All New Rush</p>
-              <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
-            </div>
-            <img class="heart" src="img/empty-like.png" alt="like" />
-          </div>
-          <img class="suv_car_img " src="img/all-new-rush.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--sm line-height--sm">
-            <div class="specification__gasoline">
-              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-              <p>70L</p>
-            </div>
-            <div class="specification__steering">
-              <img class="icon_specification" src="img/steering.png" alt="steering" />
-              <p>Manual</p>
-            </div>
-            <div class="specification__capacity">
-              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-              <p>6 People</p>
-            </div>
-          </div>
-          <div class="box_car__amount text--bold text--md line-height--md">
-            <div>
-              <p>$72.00/<span class="text">day</span></p>
-              <p class="price text--sm line-height">$80.00</p>
-            </div>
-            <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
-          </div>
-        </div>
-        <div class="box_car">
-          <div class="box_car__title_small">
-            <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line-height--md">CR-V</p>
-              <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
-            </div>
-            <img class="heart" src="img/Like.png" alt="like" />
-          </div>
-          <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--sm line-height--sm">
-            <div class="specification__gasoline">
-              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-              <p>80L</p>
-            </div>
-            <div class="specification__steering">
-              <img class="icon_specification" src="img/steering.png" alt="steering" />
-              <p>Manual</p>
-            </div>
-            <div class="specification__capacity">
-              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-              <p>6 People</p>
-            </div>
-          </div>
-          <div class="box_car__amount text--bold text--md line-height--md">
-            <p>80.00$/<span class="text">day</span></p>
-            <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
-          </div>
-        </div>
-        <div class="box_car">
-          <div class="box_car__title_small">
-            <div class="title_small__about_car">
-              <p class="about_car__name text--bold text--md line-height--md">All New Terios</p>
-              <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
-            </div>
-            <img class="heart" src="img/empty-like.png" alt="like" />
-          </div>
-          <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
-          <div class="box_car__specification text--normal text--sm line-height--sm">
-            <div class="specification__gasoline">
-              <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
-              <p>90L</p>
-            </div>
-            <div class="specification__steering">
-              <img class="icon_specification" src="img/steering.png" alt="steering" />
-              <p>Manual</p>
-            </div>
-            <div class="specification__capacity">
-              <img class="icon_specification" src="img/capacity.png" alt="capacity" />
-              <p>6 People</p>
-            </div>
-          </div>
-          <div class="box_car__amount text--bold text--md line-height--md">
-            <p>74.00$/<span class="text">day</span></p>
-            <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
 </body>
 
 </html>
