@@ -24,6 +24,10 @@ body {
   font-size: 14px;
 }
 
+.text--xlsm {
+  font-size: 16px;
+}
+
 .text--md {
   font-size: 20px;
 }
@@ -38,6 +42,10 @@ body {
 
 .text--normal {
   font-weight: 400;
+}
+
+.text--normalxl {
+  font-weight: 500;
 }
 
 .text--semi_bold {
@@ -58,6 +66,10 @@ body {
 
 .line-height--md {
   line-height: 25px;
+}
+
+.line-height--semi-lg {
+  line-height: 32px;
 }
 
 .line-height--lg {
@@ -140,6 +152,7 @@ header {
 .search__input {
   width: 100%;
   height: 100%;
+  padding-left: 50px;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 70px;
 }
@@ -220,6 +233,7 @@ header {
 .sidebar {
   box-sizing: border-box;
   max-width: 360px;
+  height: 1980px;
   width: 360px;
   background: #ffffff;
   padding: 32px 32px 0 32px;
@@ -605,5 +619,79 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+footer {
+  background-color: white;
+
+}
+
+.footer__info_bar {
+  box-sizing: border-box;
+  padding: 80px 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info_bar__text_info {
+  max-width: 292px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.info_bar__help {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 576px;
+  width: 100%;
+}
+
+.text_info__text {
+  color: rgba(19, 19, 19, 0.6);
+}
+
+.footer_text {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  height: 144px;
+  width: 152px;
+  justify-content: space-between;
+  color: rgba(19, 19, 19, 0.6);
+}
+
+.footer__line {
+  border: 1px solid rgba(19, 19, 19, 0.16);
+  margin: 0 60px;
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 48px 60px 60px;
+}
+
+.rights__right {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 348px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.socials__link {
+  text-decoration: none;
+  color: rgba(19, 19, 19, 0.6);
+}
+
+.socials__link:active {
+  color: #0743f7;
+
 
 }
