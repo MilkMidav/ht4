@@ -10,78 +10,78 @@
 </head>
 
 <body>
-  <header>
-    <div class="header__title">
-      <p class="title__text text--semi_bold text--xl">MORENT</p>
-      <div class="title__search">
-        <input class="search__input" type="search" name="search" id="search" placeholder="search something here">
-        <img class="search__icon icon_search" src="img/search_icon.png" alt="search_icon">
-        <img class="search__icon icon_setting" src="img/setting_icon.png" alt="setting_img">
+  <header class="header">
+    <div class="header__left_side">
+      <a class="left_side__text text--semi_bold text--xl" href="/index.html">
+        MORENT
+      </a>
+      <div class="left_side__search">
+        <input class="search__input" type="search" name="search" id="search" placeholder="Search something here">
       </div>
     </div>
-    <div class="title__user_icon">
-      <div class="user_icon__size">
+    <div class="header__actions">
+      <div class="icon_circle icon--sm">
         <img class="size__heart right_icon" src="img/like_list_img.png" alt="heart_img">
       </div>
-      <div class="user_icon__size red_dot">
+      <div class="icon_circle icon--sm red_dot">
         <img class="size__notif right_icon" src="img/notification.png" alt="notif_img">
       </div>
-      <div class="user_icon__size">
+      <div class="icon_circle icon--sm">
         <img class="size__setting right_icon" src="img/user_setting.png" alt="setting_icon">
-      </div>
-      <img class="user_icon__size" src="img/Alex.png" alt="Alex_user_icon">
+      </div class>
+      <img class="icon_circle avatar" src="img/Alex.png" alt="Alex_user_icon">
     </div>
   </header>
   <main>
     <div class="sidebar text--md text--semi_bold">
       <div class="sidebar__type">
-        <p class="text--smaller text--muted">TYPE</p>
+        <p class="text--xxs text--muted letter_spacing--sm">TYPE</p>
         <div>
-          <input class="sidebar_check" type="checkbox" name="sport" id="sport" checked>
-          <label for="sport">Sport<span class="text--muted">(10)</span></label>
+          <input class="sidebar__check" type="checkbox" name="sport" id="sport" checked>
+          <label for="sport">Sport<span class="check__number text--muted">(10)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="suv" id="suv" checked>
-          <label for="suv">SUV<span class="text--muted">(12)</span></label>
+          <input class="sidebar__check" type="checkbox" name="suv" id="suv" checked>
+          <label for="suv">SUV<span class="check__number text--muted">(12)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="mpv" id="mpv">
-          <label for="mpv">MPV<span class="text--muted">(16)</span></label>
+          <input class="sidebar__check" type="checkbox" name="mpv" id="mpv">
+          <label for="mpv">MPV<span class="check__number text--muted">(16)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="sedan" id="sedan">
-          <label for="sedan">Sedan<span class="text--muted">(20)</span></label>
+          <input class="sidebar__check" type="checkbox" name="sedan" id="sedan">
+          <label for="sedan">Sedan<span class="check__number text--muted">(20)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="coupe" id="coupe">
-          <label for="coupe">Coupe<span class="text--muted">(14)</span></label>
+          <input class="sidebar__check" type="checkbox" name="coupe" id="coupe">
+          <label for="coupe">Coupe<span class="check__number text--muted">(14)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="hatchback" id="hatchback">
-          <label for="hatchback">Hatchback<span class="text--muted">(14)</span></label>
+          <input class="sidebar__check" type="checkbox" name="hatchback" id="hatchback">
+          <label for="hatchback">Hatchback<span class="check__number text--muted">(14)</span></label>
         </div>
       </div>
       <div class="sidebar__capacity">
-        <p class="text--smaller text--muted">CAPACITY</p>
+        <p class="text--xxs text--muted letter_spacing--sm">CAPACITY</p>
         <div>
-          <input class="sidebar_check" type="checkbox" name="2person" id="2person" checked>
-          <label for="person">2 Person<span class="text--muted">(10)</span></label>
+          <input class="sidebar__check" type="checkbox" name="2person" id="2person" checked>
+          <label for="person">2 Person<span class="check__number text--muted">(10)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="4person" id="4person">
-          <label for="person">4 Person<span class="text--muted">(14)</span></label>
+          <input class="sidebar__check" type="checkbox" name="4person" id="4person">
+          <label for="person">4 Person<span class="check__number text--muted">(14)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="6person" id="6person">
-          <label for="6person">6 Person<span class="text--muted">(12)</span></label>
+          <input class="sidebar__check" type="checkbox" name="6person" id="6person">
+          <label for="6person">6 Person<span class="check__number text--muted">(12)</span></label>
         </div>
         <div>
-          <input class="sidebar_check" type="checkbox" name="8person" id="8person" checked>
-          <label for="person">Person<span class="text--muted">(16)</span></label>
+          <input class="sidebar__check" type="checkbox" name="8person" id="8person" checked>
+          <label for="person">Person<span class="check__number text--muted">(16)</span></label>
         </div>
       </div>
-      <div class="sidebar_price">
-        <p class="text--smaller text--muted">PRICE</p>
+      <div class="sidebar__price">
+        <p class="text--xxs text--muted letter_spacing--sm">PRICE</p>
         <div>
           <input class="sidebar_range" type="range" name="price" id="price" min="0" max="100" step="1">
         </div>
@@ -111,7 +111,7 @@
               <img class="stars" src="img/stargold.png" alt="star" />
               <img class="stars" src="img/starfree.png" alt="emptystar" />
             </div>
-            <p class="rating__reviewers_count text--sm text--normal line-height--sm">440+ Reviewer</p>
+            <p class="rating__reviewers_count text--xs text--normal line_height--sm">440+ Reviewer</p>
           </div>
           <p class="description__text text--md text--normal">
             NISMO has become the embodiment of Nissan's
@@ -122,24 +122,24 @@
           <table class="description__capabilities">
             <tbody>
               <tr>
-                <td class="capabilities__type_specification text--normal text--md line-height--md">Type Car</td>
-                <td class="capabilities__specification text--bold text--md line-height--md">Sport</td>
-                <td class="capabilities__type_specification text--normal text--md line-height--md">Capacity</td>
-                <td class="capabilities__specification text--bold text--md line-height--md">2 Person</td>
+                <td class="capabilities__type_specification text--normal text--md line_height--md">Type Car</td>
+                <td class="capabilities__specification text--bold text--md line_height--md">Sport</td>
+                <td class="capabilities__type_specification text--normal text--md line_height--md">Capacity</td>
+                <td class="capabilities__specification text--bold text--md line_height--md">2 Person</td>
               </tr>
               <tr>
-                <td class="capabilities__type_specification text--normal text--md line-height--md">Steering</td>
-                <td class="capabilities__specification text--bold text--md line-height--md">Manual</td>
-                <td class="capabilities__type_specification text--normal text--md line-height--md">Gasoline</td>
-                <td class="capabilities__specification text--bold text--md line-height--md">70L</td>
+                <td class="capabilities__type_specification text--normal text--md line_height--md">Steering</td>
+                <td class="capabilities__specification text--bold text--md line_height--md">Manual</td>
+                <td class="capabilities__type_specification text--normal text--md line_height--md">Gasoline</td>
+                <td class="capabilities__specification text--bold text--md line_height--md">70L</td>
               </tr>
             </tbody>
           </table>
           <div class="description__actions">
             <div>
-              <h2 class="discount text--lg text--bold line-height--lg">$80.00/<span
-                  class="text--muted text--bold text line-height">days</span></h2>
-              <p class="price text text--bold line-height">$100.00</p>
+              <h2 class="discount text--lg text--bold line_height--lg">$80.00/<span
+                  class="text--muted text--bold text line_height">days</span></h2>
+              <p class="price text text--bold line_height">$100.00</p>
             </div>
             <button class="button button-primary button text text--bold ">Rent Now</button>
           </div>
@@ -147,7 +147,7 @@
       </div>
       <div class="reviews">
         <div class="reviews__total">
-          <h2 class="text--bold text--md line-height--md">Reviews</h2>
+          <h2 class="text--bold text--md line_height--md">Reviews</h2>
           <p class="amount__text text--bold">13</p>
         </div>
         <div>
@@ -155,11 +155,11 @@
             <div class="people_rating__people_information">
               <img class="people_information__revisor" src="./img/Alex.png" alt="Alex Stanton" />
               <div class="people_information__small_info">
-                <p class="small_info__name text--bold text--md line-height--md">Alex Stanton</p>
-                <p class="small_info__profession text--normal text--sm line-height--sm">CEO at Bukalapak</p>
+                <p class="small_info__name text--bold text--md line_height--md">Alex Stanton</p>
+                <p class="small_info__profession text--normal text--xs line_height--sm">CEO at Bukalapak</p>
               </div>
             </div>
-            <div class="people_rating__date text--sm text--normal line-height--sm">
+            <div class="people_rating__date text--xs text--normal line_height--sm">
               <p>21 July 2022</p>
               <div class="stars-all">
                 <img class="stars" src="img/stargold.png" alt="star" />
@@ -170,7 +170,7 @@
               </div>
             </div>
           </div>
-          <p class="text_reviev text--sm text--normal">
+          <p class="text_reviev text--xs text--normal">
             We are very happy with the service from the MORENT App. Morent has a low
             price and also a large variety of cars with good and comfortable
             facilities. In addition, the service provided by the officers is also
@@ -182,11 +182,11 @@
             <div class="people_rating__people_information">
               <img class="people_information__revisor" src="./img/Skylar.png" alt="Alex Stanton" />
               <div class="people_information__small_info">
-                <p class="small_info__name text--bold text--md line-height--md">Skylar Dias</p>
-                <p class="small_info__profession text--normal text--sm line-height--sm">CEO at Amazon</p>
+                <p class="small_info__name text--bold text--md line_height--md">Skylar Dias</p>
+                <p class="small_info__profession text--normal text--xs line_height--sm">CEO at Amazon</p>
               </div>
             </div>
-            <div class="people_rating__date text--sm text--normal line-height--sm">
+            <div class="people_rating__date text--xs text--normal line_height--sm">
               <p>20 July 2022</p>
               <div class="stars-all">
                 <img class="stars" src="img/stargold.png" alt="star" />
@@ -197,14 +197,14 @@
               </div>
             </div>
           </div>
-          <p class="text_reviev text--sm text--normal">
+          <p class="text_reviev text--xs text--normal">
             We are greatly helped by the services of the MORENT Application. Morent
             has low prices and also a wide variety of cars with good and comfortable
             facilities. In addition, the service provided by the officers is also
             very friendly and very polite.
           </p>
         </div>
-        <div class="show_all text text--semi_bold line-height">
+        <div class="show_all text text--semi_bold line_height">
           <p>Show all</p>
           <img src="./img/Arrow.png" alt="arrow" />
         </div>
@@ -212,20 +212,20 @@
 
       <div class="car_suggestion">
         <div class="car_suggestion__heading">
-          <p class="heading__text text text--semi_bold line-height">Recent car</p>
-          <p class="view text text--semi_bold line-height">View all</p>
+          <p class="heading__text text text--semi_bold line_height">Recent car</p>
+          <p class="view text text--semi_bold line_height">View all</p>
         </div>
         <div class="body">
           <div class="box_car">
             <div class="box_car__title_small">
               <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line-height--md">Koenigsegg</p>
-                <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
+                <p class="about_car__name text--bold text--md line_height--md">Koenigsegg</p>
+                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
               </div>
               <img class="heart" src="img/Like.png" alt="like" />
             </div>
             <img class="sport_car_img" src="img/koenigsegg.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--sm line-height--sm">
+            <div class="box_car__specification text--normal text--xs line_height--sm">
               <div class="specification__gasoline">
                 <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
                 <p>90L</p>
@@ -239,7 +239,7 @@
                 <p>2 People</p>
               </div>
             </div>
-            <div class="box_car__amount text--bold text--md line-height--md">
+            <div class="box_car__amount text--bold text--md line_height--md">
               <p>$99.00/<span class="text text--muted">day</span></p>
               <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
@@ -247,13 +247,13 @@
           <div class="box_car">
             <div class="box_car__title_small">
               <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line-height--md">Nissan GT-R</p>
-                <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
+                <p class="about_car__name text--bold text--md line_height--md">Nissan GT-R</p>
+                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
               </div>
               <img class="heart" src="img/empty-like.png" alt="like" />
             </div>
             <img class="sport_car_img" src="img/nissan-gt-r.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--sm line-height--sm">
+            <div class="box_car__specification text--normal text--xs line_height--sm">
               <div class="specification__gasoline">
                 <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
                 <p>80L</p>
@@ -267,10 +267,10 @@
                 <p>2 People</p>
               </div>
             </div>
-            <div class="box_car__amount text--bold text--md line-height--md">
+            <div class="box_car__amount text--bold text--md line_height--md">
               <div>
                 <p>$80.00/<span class="text text--muted">days</span></p>
-                <p class="price text--sm line-height">$100.00</p>
+                <p class="price text--xs line_height">$100.00</p>
               </div>
               <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
@@ -279,13 +279,13 @@
           <div class="box_car">
             <div class="box_car__title_small">
               <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line-height--md">Rolls-Royce</p>
-                <p class="about_car__type text--bold text--sm line-height--sm">Sport</p>
+                <p class="about_car__name text--bold text--md line_height--md">Rolls-Royce</p>
+                <p class="about_car__type text--bold text--xs line_height--sm">Sport</p>
               </div>
               <img class="heart" src="img/empty-like.png" alt="like" />
             </div>
             <img class="sport_car_img" src="img/rolls-royce.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--sm line-height--sm">
+            <div class="box_car__specification text--normal text--xs line_height--sm">
               <div class="specification__gasoline">
                 <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
                 <p>70L</p>
@@ -299,7 +299,7 @@
                 <p>4 People</p>
               </div>
             </div>
-            <div class="box_car__amount text--bold text--md line-height--md">
+            <div class="box_car__amount text--bold text--md line_height--md">
               <p>$96.00/<span class="text text--muted">day</span></p>
               <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
@@ -307,20 +307,20 @@
           </div>
         </div>
         <div class="car_suggestion__heading">
-          <p class="heading__text text text--semi_bold line-height">Recommendation car</p>
-          <p class="heading__icon text text--semi_bold line-height">View All</p>
+          <p class="heading__text text text--semi_bold line_height">Recommendation car</p>
+          <p class="heading__icon text text--semi_bold line_height">View All</p>
         </div>
         <div class="body">
           <div class="box_car">
             <div class="box_car__title_small">
               <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line-height--md">All New Rush</p>
-                <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
+                <p class="about_car__name text--bold text--md line_height--md">All New Rush</p>
+                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
               </div>
               <img class="heart" src="img/empty-like.png" alt="like" />
             </div>
             <img class="suv_car_img " src="img/all-new-rush.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--sm line-height--sm">
+            <div class="box_car__specification text--normal text--xs line_height--sm">
               <div class="specification__gasoline">
                 <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
                 <p>70L</p>
@@ -334,10 +334,10 @@
                 <p>6 People</p>
               </div>
             </div>
-            <div class="box_car__amount text--bold text--md line-height--md">
+            <div class="box_car__amount text--bold text--md line_height--md">
               <div>
                 <p>$72.00/<span class="text text--muted">day</span></p>
-                <p class="price text--sm line-height">$80.00</p>
+                <p class="price text--xs line_height">$80.00</p>
               </div>
               <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
@@ -345,13 +345,13 @@
           <div class="box_car">
             <div class="box_car__title_small">
               <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line-height--md">CR-V</p>
-                <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
+                <p class="about_car__name text--bold text--md line_height--md">CR-V</p>
+                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
               </div>
               <img class="heart" src="img/Like.png" alt="like" />
             </div>
             <img class="suv_car_img " src="img/cr-v.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--sm line-height--sm">
+            <div class="box_car__specification text--normal text--xs line_height--sm">
               <div class="specification__gasoline">
                 <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
                 <p>80L</p>
@@ -365,7 +365,7 @@
                 <p>6 People</p>
               </div>
             </div>
-            <div class="box_car__amount text--bold text--md line-height--md">
+            <div class="box_car__amount text--bold text--md line_height--md">
               <p>80.00$/<span class="text text--muted">day</span></p>
               <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
@@ -373,13 +373,13 @@
           <div class="box_car">
             <div class="box_car__title_small">
               <div class="title_small__about_car">
-                <p class="about_car__name text--bold text--md line-height--md">All New Terios</p>
-                <p class="about_car__type text--bold text--sm line-height--sm">SUV</p>
+                <p class="about_car__name text--bold text--md line_height--md">All New Terios</p>
+                <p class="about_car__type text--bold text--xs line_height--sm">SUV</p>
               </div>
               <img class="heart" src="img/empty-like.png" alt="like" />
             </div>
             <img class="asuv_car_img" src="img/all-new-terios.png" alt="car_img" />
-            <div class="box_car__specification text--normal text--sm line-height--sm">
+            <div class="box_car__specification text--normal text--xs line_height--sm">
               <div class="specification__gasoline">
                 <img class="icon_specification" src="img/gasoline.png" alt="gasoline" />
                 <p>90L</p>
@@ -389,11 +389,12 @@
                 <p>Manual</p>
               </div>
               <div class="specification__capacity">
+
                 <img class="icon_specification" src="img/capacity.png" alt="capacity" />
                 <p>6 People</p>
               </div>
             </div>
-            <div class="box_car__amount text--bold text--md line-height--md">
+            <div class="box_car__amount text--bold text--md line_height--md">
               <p>74.00$/<span class="text text--muted">day</span></p>
               <button class="button-primary button--sm text--semi_bold te xt">Rent Now</button>
             </div>
@@ -402,69 +403,69 @@
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer__info_bar">
       <div class="info_bar__text_info">
-        <p class="title__text text--semi_bold text--xl">MORENT</p>
-        <p class="text_info__text line-height--semi-lg text--normalxl text--xlsm">Our vision is to provide convenience
+        <a href="index.html" class="botton_logo text--semi_bold text--xl">MORENT</a>
+        <p class="text_info__text line_height--32 text--fw500 text--sm">Our vision is to provide convenience
           and help increase
           your sales business.</p>
       </div>
       <div class="info_bar__help">
         <div class="help__about">
-          <h2 class="text--semi_bold text--md line-height--md">
+          <h2 class="text--semi_bold text--md line_height--md">
             About
           </h2>
           <div class="footer_text">
-            <p class="text--normalxl text--xlsm line-height--sm">
-              How it work
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">How it work</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Featured
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Featured</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Partnership
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Partnership</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Business Relation
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Business Relation</a>
             </p>
           </div>
         </div>
         <div class="help__community">
-          <h2 class="text--semi_bold text--md line-height--md">
+          <h2 class="text--semi_bold text--md line_height--md">
             Community
           </h2>
           <div class="footer_text">
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Events
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Events</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Blog
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Blog</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Podcast
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Podcast</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              Invite a friend
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Invite a friend</a>
             </p>
           </div>
         </div>
         <div class="help__socials">
-          <h2 class="text--semi_bold text--md line-height--md">
+          <h2 class="text--semi_bold text--md line_height--md">
             Socials
           </h2>
           <div class="footer_text">
-            <p class="text--normalxl text--xlsm line-height--sm">
-              <a class="socials__link" href="">Discord</a>
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Discord</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              <a class="socials__link" href="">Instagram</a>
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Instagram</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              <a class="socials__link" href="">Twitter</a>
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Twitter</a>
             </p>
-            <p class="text--normalxl text--xlsm line-height--sm">
-              <a class="socials__link" href="">Facebook</a>
+            <p class="text--fw500 text--sm line_height--sm">
+              <a class="link" href="">Facebook</a>
             </p>
           </div>
         </div>
@@ -473,11 +474,11 @@
     <hr class="footer__line">
     <div class="footer__rights">
       <div class="rights__left">
-        <p class="text--xlsm text--semi_bold line-height--semi-lg">©2022 MORENT. All rights reserved</p>
+        <p class="text--sm text--semi_bold line_height--32">©2022 MORENT. All rights reserved</p>
       </div>
       <div class="rights__right">
-        <p class="text--xlsm text--semi_bold line-height--semi-lg">Privacy & Policy</p>
-        <p class="text--xlsm text--semi_bold line-height--semi-lg">Terms & Condition</p>
+        <p class="text--sm text--semi_bold line_height--32">Privacy & Policy</p>
+        <p class="text--sm text--semi_bold line_height--32">Terms & Condition</p>
       </div>
     </div>
   </footer>

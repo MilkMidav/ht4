@@ -1,6 +1,7 @@
 body {
   background: #f6f7f9;
   font-family: font jakarta regular;
+  margin: 0;
 }
 
 @font-face {
@@ -16,15 +17,15 @@ body {
   color: #94A7CB;
 }
 
-.text--smaller {
+.text--xxs {
   font-size: 12px;
 }
 
-.text--sm {
+.text--xs {
   font-size: 14px;
 }
 
-.text--xlsm {
+.text--sm {
   font-size: 16px;
 }
 
@@ -44,7 +45,7 @@ body {
   font-weight: 400;
 }
 
-.text--normalxl {
+.text--fw500 {
   font-weight: 500;
 }
 
@@ -56,24 +57,28 @@ body {
   font-weight: 700;
 }
 
-.line-height {
+.line_height {
   line-height: 20px;
 }
 
-.line-height--sm {
+.line_height--sm {
   line-height: 18px;
 }
 
-.line-height--md {
+.line_height--md {
   line-height: 25px;
 }
 
-.line-height--semi-lg {
+.line_height--32 {
   line-height: 32px;
 }
 
-.line-height--lg {
+.line_height--lg {
   line-height: 35px;
+}
+
+.letter_spacing--sm {
+  letter-spacing: 0.1em;
 }
 
 .button-primary {
@@ -115,7 +120,9 @@ main {
   box-sizing: border-box;
 }
 
-header {
+.header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -123,7 +130,7 @@ header {
   border: 1px solid rgba(195, 212, 233, 0.4);
 }
 
-.header__title {
+.header__left_side {
   box-sizing: border-box;
   max-width: 704px;
   width: 100%;
@@ -134,12 +141,12 @@ header {
   align-items: center;
 }
 
-.title__text {
+.left_side__text {
   color: #3563E9;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.title__search {
+.left_side__search {
   position: relative;
   max-width: 492px;
   max-height: 44px;
@@ -157,32 +164,31 @@ header {
   border-radius: 70px;
 }
 
+.left_side__search::before {
+  content: url(img/search_icon.svg);
+  position: absolute;
+  top: 9px;
+  left: 20px;
+
+}
+
+.left_side__search::after {
+  position: absolute;
+  content: url(img/setting_icon.svg);
+  top: 9px;
+  right: 20px;
+}
+
 .search__input::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #3D5278;
-  padding-left: 64px;
+  padding-left: 10px;
 }
 
-.search__icon {
-  position: absolute;
-  width: 19px;
-  cursor: pointer;
-}
-
-.icon_search {
-  left: 22px;
-  top: 11px;
-}
-
-.icon_setting {
-  right: 22px;
-  top: 11px;
-}
-
-.title__user_icon {
+.header__actions {
   display: flex;
   max-width: 236px;
   width: 100%;
@@ -204,10 +210,15 @@ header {
 }
 
 .red_dot::after {
-  content: url(img/Notif.png);
+  content: "";
   position: absolute;
-  top: -5px;
-  left: 33px;
+  width: 11px;
+  height: 11px;
+  border: solid #ff4423 1px;
+  border-radius: 50px;
+  background-color: #ff4423;
+  left: 30px;
+  bottom: 33px;
 }
 
 
@@ -215,18 +226,25 @@ header {
   width: 24px;
 }
 
-.right_icon {
-  margin: auto;
-}
 
-.user_icon__size {
+.icon--sm {
   width: 44px;
   height: 44px;
-  border: 1px solid #C3D4E9;
   border-radius: 90px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 90px;
+}
+
+.icon_circle {
+  border: 1px solid #C3D4E9;
   display: flex;
   align-items: center;
   cursor: pointer;
+  justify-content: center;
 }
 
 
@@ -240,17 +258,35 @@ header {
   color: #3D5278;
 }
 
-.sidebar_check {
-  margin-top: 32px;
+.sidebar__type {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 352px;
+  height: 100%;
+  justify-content: space-between;
+
+}
+
+.sidebar__check {
   height: 20px;
   width: 20px;
 }
 
-.sidebar__capacity {
-  margin-top: 56px;
+.check__number {
+  padding-left: 5px;
 }
 
-.sidebar_price {
+.sidebar__capacity {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 240px;
+  height: 100%;
+}
+
+.sidebar__price {
   margin-top: 56px;
 }
 
@@ -620,7 +656,7 @@ header {
   justify-content: space-between;
 }
 
-footer {
+.footer {
   background-color: white;
 
 }
@@ -664,6 +700,26 @@ footer {
   color: rgba(19, 19, 19, 0.6);
 }
 
+.botton_logo {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.botton_logo::before {
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  color: #0743f7;
+  transition: 0.8s;
+  content: "MORENT";
+}
+
+.botton_logo:hover::before {
+  width: 100%;
+}
+
 .footer__line {
   border: 1px solid rgba(19, 19, 19, 0.16);
   margin: 0 60px;
@@ -685,13 +741,11 @@ footer {
   justify-content: space-between;
 }
 
-.socials__link {
+.link {
   text-decoration: none;
   color: rgba(19, 19, 19, 0.6);
 }
 
-.socials__link:active {
+.link:active {
   color: #0743f7;
-
-
 }
