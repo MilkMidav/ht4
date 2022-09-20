@@ -749,3 +749,19 @@ main {
 .link:active {
   color: #0743f7;
 }
+
+/* style for input.html */
+
+.main {
+  display: flex;
+}
+
+.main__order {
+  max-height: 2176px;
+  height: 100%;
+  width: 852px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
