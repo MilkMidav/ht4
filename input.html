@@ -32,13 +32,57 @@
 
   <main class="main">
     <div class="main__order">
-      <div class="order__billing_info"></div>
-      <div class="order__rental_info"></div>
+      <div class="order__billing_info">
+        <p class="text--md text--bold line_height--md ">Billing Info</p>
+        <div class="billing_info__text">
+          <p class="text--fw500 text--xs text--xs text--muted">Please enter your billing info</p>
+          <p class="text--fw500 text--xs text--xs text--muted">Step 1 of 4</p>
+        </div>
+        <div class="billing_info__name_phone">
+          <div class="text_input">
+            <p class="text--semi_bold text--sm line_height--sm">Name</p>
+            <input class="order--input" type="name" name="name" id="name" placeholder="Your name">
+          </div>
+          <div class="text_input">
+            <p class="text--semi_bold text--sm line_height--sm">Phone Number</p>
+            <input class="order--input" type="tel" name="number" id="number" placeholder="Your number">
+          </div>
+        </div>
+        <div class="billing_info__address_city">
+          <div class="text_input">
+            <p class="text--semi_bold text--sm line_height--sm">Address</p>
+            <input class="order--input" type="address" name="address" id="address" placeholder="Address">
+          </div>
+          <div class="text_input">
+            <p class="text--semi_bold text--sm line_height--sm">Town/City</p>
+            <input class="order--input" type="text" name="town" id="town" placeholder="Town or city">
+          </div>
+        </div>
+      </div>
+      <div class="order__rental_info">
+        <div class="rental_info__text">
+          <div>
+            <p class="text--md text--bold line_height--md ">Rental Info</p>
+            <p class="text--fw500 text--xs text--xs text--muted">Please select your rental date</p>
+          </div>
+          <p class="text--fw500 text--xs text--xs text--muted">Step 2 of 4</p>
+        </div>
+        <input type="text">
+        <div class="rental_info__locatin_date_time">
+
+        </div>
+        <input type="text">
+        <div class="rental_info__location_date_time">
+
+        </div>
+      </div>
       <div class="order__payment_method"></div>
       <div class="order__confirmation"></div>
     </div>
 
-    <div class="main__rental_summary"></div>
+    <div class="main__rental_summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus! Commodi
+      nihil molestias sint officia at odio laborum ducimus. Voluptate ab sapiente repellat quisquam laborum natus
+      pariatur nam aliquid distinctio!</div>
   </main>
 
   <footer class="footer">

@@ -752,16 +752,67 @@ main {
 
 /* style for input.html */
 
+.order--input {
+  background: #F6F7F9;
+  border-radius: 10px;
+  border: none;
+  width: 386px;
+  height: 56px;
+}
+
+.order--input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  padding-left: 32px;
+}
+
 .main {
   display: flex;
+  justify-content: space-between;
 }
 
 .main__order {
-  max-height: 2176px;
-  height: 100%;
-  width: 852px;
   box-sizing: border-box;
+  max-width: 852px;
+  width: 100%;
+}
+
+.main__rental_summary {
+  max-width: 492px;
+}
+
+.order__billing_info {
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 32px;
+  background-color: #ffffff;
+  width: 852px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.billing_info__text {
+  display: flex;
   justify-content: space-between;
+}
+
+.billing_info__name_phone {
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+  margin-top: 32px;
+}
+
+.billing_info__address_city {
+  margin-top: 24px;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_input {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
