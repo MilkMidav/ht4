@@ -34,7 +34,7 @@
     <div class="main__order">
       <div class="order__billing_info">
         <p class="text--md text--bold line_height--md ">Billing Info</p>
-        <div class="billing_info__text">
+        <div class="title_text">
           <p class="text--fw500 text--xs text--xs text--muted">Please enter your billing info</p>
           <p class="text--fw500 text--xs text--xs text--muted">Step 1 of 4</p>
         </div>
@@ -61,22 +61,120 @@
       </div>
       <div class="order__rental_info">
         <div class="rental_info__text">
-          <div>
-            <p class="text--md text--bold line_height--md ">Rental Info</p>
+          <p class="text--md text--bold line_height--md ">Rental Info</p>
+          <div class="title_text">
             <p class="text--fw500 text--xs text--xs text--muted">Please select your rental date</p>
+            <p class="text--fw500 text--xs text--xs text--muted">Step 2 of 4</p>
           </div>
-          <p class="text--fw500 text--xs text--xs text--muted">Step 2 of 4</p>
         </div>
-        <input type="text">
-        <div class="rental_info__locatin_date_time">
-
+        <div class="rental_info__radio_input">
+          <input type="radio" id="rent-input" name="rent-input" checked>
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-up</label>
         </div>
-        <input type="text">
-        <div class="rental_info__location_date_time">
-
+        <div class="rental_info__select_block">
+          <div class="select_block__location_date_time">
+            <div class="text_input">
+              <p class="text--bold text--sm line_height">Location</p>
+              <select name="location" id="location"
+                class="order--input select--text text--muted text--xs text--normal line_height--28">
+                <option value="" hidden>select your city</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+              </select>
+            </div>
+            <div class="text_input">
+              <p class="text--bold text--sm line_height">Date</p>
+              <select name="data" id="data"
+                class="order--input select--text text--muted text--xs text--normal line_height--28">
+                <option value="" hidden>select your date</option>
+                <option value="23.09">23 september</option>
+                <option value="24.09">24 september</option>
+                <option value="25.09">25 september</option>
+                <option value="26.09">26 september</option>
+              </select>
+            </div>
+          </div>
+          <div class="text_input select_block__time_block">
+            <p class="text--bold text--sm line_height">Time</p>
+            <select name="time" id="time"
+              class="order--input select--text text--muted text--xs text--normal line_height--28">
+              <option class="select--text" value="" hidden>select your time</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="rental_info__radio_input">
+          <input type="radio" id="rent-input" name="rent-input">
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-of</label>
+        </div>
+        <div class="rental_info__select_block">
+          <div class="select_block__location_date_time">
+            <div class="text_input ">
+              <p class="text--bold text--sm line_height">Location</p>
+              <select name="location" id="location"
+                class="order--input select--text text--muted text--xs text--normal line_height--28">
+                <option value="" hidden>select your city</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+                <option value="kyiv">KYIV</option>
+              </select>
+            </div>
+            <div class="text_input ">
+              <p class="text--bold text--sm line_height">Date</p>
+              <select name="data" id="data"
+                class="order--input select--text text--muted text--xs text--normal line_height--28">
+                <option value="" hidden>select your date</option>
+                <option value="23.09">23 september</option>
+                <option value="24.09">24 september</option>
+                <option value="25.09">25 september</option>
+                <option value="26.09">26 september</option>
+              </select>
+            </div>
+          </div>
+          <div class="text_input select_block__time_block">
+            <p class="text--bold text--sm line_height">Time</p>
+            <select name="time" id="time"
+              class="order--input select--text text--muted text--xs text--normal line_height--28">
+              <option value="" hidden>select your time</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
+          </div>
         </div>
       </div>
-      <div class="order__payment_method"></div>
+      <div class="order__payment_method">
+        <div class="rental_info__text">
+          <p class="text--md text--bold line_height--md ">Payment Method</p>
+          <div class="title_text">
+            <p class="text--fw500 text--xs text--xs text--muted">Please enter your payment method</p>
+            <p class="text--fw500 text--xs text--xs text--muted">Step 3 of 4</p>
+          </div>
+        </div>
+      </div>
       <div class="order__confirmation"></div>
     </div>
 

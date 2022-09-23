@@ -69,6 +69,10 @@ body {
   line-height: 25px;
 }
 
+.line_height--28 {
+  line-height: 28px;
+}
+
 .line_height--32 {
   line-height: 32px;
 }
@@ -775,6 +779,7 @@ main {
 .main__order {
   box-sizing: border-box;
   max-width: 852px;
+  margin: 32px;
   width: 100%;
 }
 
@@ -784,16 +789,16 @@ main {
 
 .order__billing_info {
   box-sizing: border-box;
-  padding: 24px;
-  margin: 32px;
   background-color: #ffffff;
   width: 852px;
   width: 100%;
+  padding: 24px;
   border-radius: 10px;
 }
 
-.billing_info__text {
+.title_text {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -808,6 +813,7 @@ main {
   margin-top: 24px;
   height: 92px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -815,4 +821,50 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 92px;
+}
+
+
+.order__rental_info {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.select_block__location_date_time {
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+}
+
+.rental_info__radio_input {
+  margin-top: 32px;
+}
+
+.select_block__time_block {
+  margin-top: 24px;
+}
+
+option {
+  background-color: #F6F7F9;
+  color: #728198;
+  padding-right: 32px;
+}
+
+.select--text {
+  padding-left: 32px;
+}
+
+.rental_info__select_block {
+  margin-top: 24px;
+}
+
+.order__payment_method {
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 32px;
+  box-sizing: border-box;
+  max-width: ;
 }
