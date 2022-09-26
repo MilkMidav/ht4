@@ -39,21 +39,21 @@
           <p class="text--fw500 text--xs text--xs text--muted">Step 1 of 4</p>
         </div>
         <div class="billing_info__name_phone">
-          <div class="text_input">
+          <div class="text_container">
             <p class="text--semi_bold text--sm line_height--sm">Name</p>
             <input class="order--input" type="name" name="name" id="name" placeholder="Your name">
           </div>
-          <div class="text_input">
+          <div class="text_container">
             <p class="text--semi_bold text--sm line_height--sm">Phone Number</p>
             <input class="order--input" type="tel" name="number" id="number" placeholder="Your number">
           </div>
         </div>
         <div class="billing_info__address_city">
-          <div class="text_input">
+          <div class="text_container">
             <p class="text--semi_bold text--sm line_height--sm">Address</p>
             <input class="order--input" type="address" name="address" id="address" placeholder="Address">
           </div>
-          <div class="text_input">
+          <div class="text_container">
             <p class="text--semi_bold text--sm line_height--sm">Town/City</p>
             <input class="order--input" type="text" name="town" id="town" placeholder="Town or city">
           </div>
@@ -73,7 +73,7 @@
         </div>
         <div class="rental_info__select_block">
           <div class="select_block__location_date_time">
-            <div class="text_input">
+            <div class="text_container">
               <p class="text--bold text--sm line_height">Location</p>
               <select name="location" id="location"
                 class="order--input select--text text--muted text--xs text--normal line_height--28">
@@ -86,7 +86,7 @@
                 <option value="kyiv">KYIV</option>
               </select>
             </div>
-            <div class="text_input">
+            <div class="text_container">
               <p class="text--bold text--sm line_height">Date</p>
               <select name="data" id="data"
                 class="order--input select--text text--muted text--xs text--normal line_height--28">
@@ -98,7 +98,7 @@
               </select>
             </div>
           </div>
-          <div class="text_input select_block__time_block">
+          <div class="text_container select_block__time_block">
             <p class="text--bold text--sm line_height">Time</p>
             <select name="time" id="time"
               class="order--input select--text text--muted text--xs text--normal line_height--28">
@@ -122,7 +122,7 @@
         </div>
         <div class="rental_info__select_block">
           <div class="select_block__location_date_time">
-            <div class="text_input ">
+            <div class="text_container ">
               <p class="text--bold text--sm line_height">Location</p>
               <select name="location" id="location"
                 class="order--input select--text text--muted text--xs text--normal line_height--28">
@@ -135,7 +135,7 @@
                 <option value="kyiv">KYIV</option>
               </select>
             </div>
-            <div class="text_input ">
+            <div class="text_container ">
               <p class="text--bold text--sm line_height">Date</p>
               <select name="data" id="data"
                 class="order--input select--text text--muted text--xs text--normal line_height--28">
@@ -147,7 +147,7 @@
               </select>
             </div>
           </div>
-          <div class="text_input select_block__time_block">
+          <div class="text_container select_block__time_block">
             <p class="text--bold text--sm line_height">Time</p>
             <select name="time" id="time"
               class="order--input select--text text--muted text--xs text--normal line_height--28">
@@ -174,13 +174,55 @@
             <p class="text--fw500 text--xs text--xs text--muted">Step 3 of 4</p>
           </div>
         </div>
+        <div class="paymenth_method__visa_block">
+          <div class="visa_block_card_input">
+            <div>
+              <input id="payment-input" name="payment-input" type="radio">
+              <label for="paymenth-input">Credit card</label>
+            </div>
+            <img src="img/Visa .png" alt="visa_logo">
+          </div>
+          <div class="visa_block__number_exp_date">
+            <div class="text_container">
+              <p class="text--semi_bold text--sm line_height--sm">Card Number</p>
+              <input class="payment--input" type="number" name="card_number" id="card_number" placeholder="Card number">
+            </div>
+            <div class="text_container">
+              <p class="text--semi_bold text--sm line_height--sm">Expiration Date</p>
+              <input class="payment--input" type="date" name="exp_date" id="exp_date">
+            </div>
+          </div>
+          <div class="visa_block__holder_cvc">
+            <div class="text_container">
+              <p class="text--semi_bold text--sm line_height--sm">Card Holder</p>
+              <input class="payment--input" type="name" name="card_holder" id="card_holder" placeholder="Card holder">
+            </div>
+            <div class="text_container">
+              <p class="text--semi_bold text--sm line_height--sm">CVC</p>
+              <input class="payment--input" type="password" name="CVC" id="cvc" placeholder="CVC">
+            </div>
+          </div>
+        </div>
+        <div class="paymenth_method__paypal">
+          <div>
+            <input id="payment-input" name="payment-input" type="radio">
+            <label for="payment-input">PayPal</label>
+          </div>
+          <img src="img/PayPal.png" alt="paypal_logo">
+        </div>
+        <div class="paymenth_method__bitcoin">
+          <div>
+            <input id="payment-input" name="payment-input" type="radio">
+            <label for="payment-input">Bitcoin</label>
+          </div>
+          <img src="img/Bitcoin.png" alt="bitcoin_logo">
+        </div>
       </div>
       <div class="order__confirmation"></div>
-    </div>
 
-    <div class="main__rental_summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus! Commodi
-      nihil molestias sint officia at odio laborum ducimus. Voluptate ab sapiente repellat quisquam laborum natus
-      pariatur nam aliquid distinctio!</div>
+      <div class="main__rental_summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus! Commodi
+        nihil molestias sint officia at odio laborum ducimus. Voluptate ab sapiente repellat quisquam laborum natus
+        pariatur nam aliquid distinctio!</div>
   </main>
 
   <footer class="footer">
