@@ -140,10 +140,10 @@
               <select name="data" id="data"
                 class="order--input select--text text--muted text--xs text--normal line_height--28">
                 <option value="" hidden>select your date</option>
-                <option value="23.09">23 september</option>
-                <option value="24.09">24 september</option>
-                <option value="25.09">25 september</option>
-                <option value="26.09">26 september</option>
+                <option value="23.09">07 october</option>
+                <option value="24.09">08 october</option>
+                <option value="25.09">09 october</option>
+                <option value="26.09">10 october</option>
               </select>
             </div>
           </div>
@@ -185,7 +185,7 @@
           <div class="visa_block__number_exp_date">
             <div class="text_container">
               <p class="text--semi_bold text--sm line_height--sm">Card Number</p>
-              <input class="payment--input" type="number" name="card_number" id="card_number" placeholder="Card number">
+              <input class="payment--input" type="text" name="card_number" id="card_number" placeholder="Card number">
             </div>
             <div class="text_container">
               <p class="text--semi_bold text--sm line_height--sm">Expiration Date</p>
@@ -251,13 +251,50 @@
       </div>
     </div>
     <div class="main__rental_summary">
-      <div class="rental_summary__info__text">
+      <div class="rental_summary__info_text">
         <p class="text--md text--bold line_height--md ">Rental Summary</p>
         <p class="text--fw500 text--xs text--xs text--muted">Prices may change depending on the length of the rental and
           the price of your rental car.</p>
       </div>
       <div class="rental_summary__car_outlook">
-        <img src="img/Look_car.png" alt="">
+        <img src="img/Look_car.png" alt="small_nissan_gtr">
+        <div class="car_outlook__name_rating">
+          <div class="name_rating__title">
+            <h2 class="title__nissan text--bold text--xl">Nissan GT-R</h2>
+          </div>
+          <div class="name_rating__rating">
+            <div class="rating__stars-all">
+              <img class="stars" src="img/stargold.png" alt="star" />
+              <img class="stars" src="img/stargold.png" alt="star" />
+              <img class="stars" src="img/stargold.png" alt="star" />
+              <img class="stars" src="img/stargold.png" alt="star" />
+              <img class="stars" src="img/starfree.png" alt="emptystar" />
+            </div>
+            <p class="rating__reviewers_count text--xs text--normal line_height--sm">440+ Reviewer</p>
+          </div>
+        </div>
+      </div>
+      <hr class="rental_summary__line">
+      <div class="rental_summary__subtotal">
+        <p class="text--semi_bold text--muted text--sm line_height--sm">Subtotal</p>
+        <p class="text--semi_bold text--sm line_height--sm">$80</p>
+      </div>
+      <div class="rental_summary__tax">
+        <p class="text--semi_bold text--muted text--sm line_height--sm">Tax</p>
+        <p class="text--semi_bold text--sm line_height--sm">$0</p>
+      </div>
+      <div class="rental_summary__apply_now">
+        <p class="text--semi_bold text--muted text--xs line_height--sm">Apply promo code</p>
+        <p class="text--semi_bold text--xs line_height--sm">Apply now</p>
+      </div>
+      <div class="rental_summary__total_price">
+        <div>
+          <p class="text--md text--bold line_height--md ">Total Rental Price</p>
+          <p class="text--fw500 text--xs text--xs text--muted">Overall price and includes rental discount.</p>
+        </div>
+        <div>
+          <h2 class="discount text--lg text--bold line_height--lg">$80.00</h2>
+        </div>
       </div>
     </div>
   </main>

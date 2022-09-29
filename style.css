@@ -832,6 +832,7 @@ main {
   margin-top: 32px;
 }
 
+
 .select_block__location_date_time {
   display: flex;
   justify-content: space-between;
@@ -956,8 +957,57 @@ option {
 }
 
 .main__rental_summary {
+  box-sizing: border-box;
   background: #FFFFFF;
   margin: 32px 32px 0 0;
   border-radius: 10px;
   padding: 24px;
+  max-height: 540px;
+}
+
+.rental_summary__car_outlook {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.car_outlook__name_rating {
+  margin-left: 16px;
+}
+
+.name_rating__rating {
+  display: flex;
+  align-items: center;
+}
+
+.rental_summary__line {
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  margin: 32px 0;
+}
+
+.rental_summary__subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rental_summary__tax {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.rental_summary__apply_now {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding: 16px 32px;
+  background: #F6F7F9;
+  border-radius: 10px;
+}
+
+.rental_summary__total_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
 }
