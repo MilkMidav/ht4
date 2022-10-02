@@ -141,7 +141,7 @@ main {
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  margin: 40px 0 40px 60px;
+  padding: 40px 0 40px 60px;
   align-items: center;
 }
 
@@ -163,7 +163,7 @@ main {
 .search__input {
   width: 100%;
   height: 100%;
-  padding-left: 50px;
+  padding-left: 70px;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 70px;
 }
@@ -189,7 +189,6 @@ main {
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #3D5278;
-  padding-left: 10px;
 }
 
 .header__actions {
@@ -197,7 +196,7 @@ main {
   max-width: 236px;
   width: 100%;
   justify-content: space-between;
-  margin: 40px 32px 40px;
+  padding: 40px 32px 40px;
 }
 
 .size__heart {
@@ -264,17 +263,21 @@ main {
 
 .sidebar__type {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  max-height: 352px;
-  height: 100%;
-  justify-content: space-between;
-
 }
 
-.sidebar__check {
+.check_size {
   height: 20px;
   width: 20px;
+}
+
+[type=checkbox] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+}
+
+.sidebar__filters>div {
+  margin-top: 32px;
 }
 
 .check__number {
@@ -283,11 +286,6 @@ main {
 
 .sidebar__capacity {
   margin-top: 56px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 240px;
-  height: 100%;
 }
 
 .sidebar__price {
@@ -694,14 +692,12 @@ main {
   color: rgba(19, 19, 19, 0.6);
 }
 
-.footer_text {
+.info_text {
   margin-top: 38px;
   display: flex;
   flex-direction: column;
   height: 144px;
   width: 152px;
-  justify-content: space-between;
-  color: rgba(19, 19, 19, 0.6);
 }
 
 .botton_logo {
@@ -748,6 +744,7 @@ main {
 .link {
   text-decoration: none;
   color: rgba(19, 19, 19, 0.6);
+  padding-bottom: 20px;
 }
 
 .link:active {
