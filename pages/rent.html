@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
   <title>Payment Car Rent</title>
 </head>
 
@@ -18,66 +18,66 @@
     </div>
     <div class="header__actions">
       <div class="icon_circle icon--sm">
-        <img class="size__heart right_icon" src="img/like_list_img.png" alt="heart_img">
+        <img class="size__heart right_icon" src="../img/like_list_img.png" alt="heart_img">
       </div>
       <div class="icon_circle icon--sm red_dot">
-        <img class="size__notif right_icon" src="img/notification.png" alt="notif_img">
+        <img class="size__notif right_icon" src="../img/notification.png" alt="notif_img">
       </div>
       <div class="icon_circle icon--sm">
-        <img class="size__setting right_icon" src="img/user_setting.png" alt="setting_icon">
+        <img class="size__setting right_icon" src="../img/user_setting.png" alt="setting_icon">
       </div class>
-      <img class="icon_circle avatar" src="img/Alex.png" alt="Alex_user_icon">
+      <img class="icon_circle avatar" src="../img/Alex.png" alt="Alex_user_icon">
     </div>
   </header>
 
   <main class="main">
     <div class="main__order">
-      <div class="order__billing_info">
+      <div class="form">
         <p class="text--md text--bold line_height--md ">Billing Info</p>
-        <div class="title_text">
+        <div class="form__subtitle">
           <p class="text--fw500 text--xs text--xs text--muted">Please enter your billing info</p>
           <p class="text--fw500 text--xs text--xs text--muted">Step 1 of 4</p>
         </div>
-        <div class="billing_info__name_phone">
+        <div class="form__billing_info">
           <div class="text_container">
-            <p class="text--semi_bold text--sm line_height--sm">Name</p>
-            <input class="order--input" type="name" name="name" id="name" placeholder="Your name">
+            <label for="name" class="text--semi_bold text--sm line_height--sm">Name</label>
+            <input class="input" type="name" name="name" id="name" placeholder="Your name">
           </div>
           <div class="text_container">
-            <p class="text--semi_bold text--sm line_height--sm">Phone Number</p>
-            <input class="order--input" type="tel" name="number" id="number" placeholder="Your number">
+            <label for="number" class="text--semi_bold text--sm line_height--sm">Phone Number</label>
+            <input class="input" type="tel" name="number" id="number" placeholder="Your number">
           </div>
         </div>
-        <div class="billing_info__address_city">
+        <div class="form__billing_info">
           <div class="text_container">
-            <p class="text--semi_bold text--sm line_height--sm">Address</p>
-            <input class="order--input" type="address" name="address" id="address" placeholder="Address">
+            <label for="addres" class="text--semi_bold text--sm line_height--sm">Address</label>
+            <input class="input" type="address" name="address" id="address" placeholder="Address">
           </div>
           <div class="text_container">
-            <p class="text--semi_bold text--sm line_height--sm">Town/City</p>
-            <input class="order--input" type="text" name="town" id="town" placeholder="Town or city">
+            <label for="town" class="text--semi_bold text--sm line_height--sm">Town/City</label>
+            <input class="input" type="text" name="town" id="town" placeholder="Town or city">
           </div>
         </div>
       </div>
-      <div class="order__rental_info">
+      <div class="form">
         <div class="rental_info__text">
           <p class="text--md text--bold line_height--md ">Rental Info</p>
-          <div class="title_text">
+          <div class="form__subtitle">
             <p class="text--fw500 text--xs text--xs text--muted">Please select your rental date</p>
             <p class="text--fw500 text--xs text--xs text--muted">Step 2 of 4</p>
           </div>
         </div>
         <div class="rental_info__radio_input">
           <input type="radio" id="rent-input" name="rent-input" checked>
-          <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-up</label>
+          <label for="rent-input" class="text--semi_bold text--sm line_height" for="rent-input">Pick-up</label>
         </div>
         <div class="rental_info__select_block">
           <div class="select_block__location_date_time">
             <div class="text_container">
-              <p class="text--bold text--sm line_height">Location</p>
+              <label for="location" class="text--bold text--sm line_height">Location</label>
               <select name="location" id="location"
-                class="order--input select--text text--muted text--xs text--normal line_height--28">
-                <option value="" hidden>select your city</option>
+                class="input select--text text--muted text--xs text--normal line_height--28">
+                <option value="" hidden>Select your city</option>
                 <option value="kyiv">KYIV</option>
                 <option value="kyiv">KYIV</option>
                 <option value="kyiv">KYIV</option>
@@ -87,22 +87,14 @@
               </select>
             </div>
             <div class="text_container">
-              <p class="text--bold text--sm line_height">Date</p>
-              <select name="data" id="data"
-                class="order--input select--text text--muted text--xs text--normal line_height--28">
-                <option value="" hidden>select your date</option>
-                <option value="23.09">23 september</option>
-                <option value="24.09">24 september</option>
-                <option value="25.09">25 september</option>
-                <option value="26.09">26 september</option>
-              </select>
+              <label for="date" class="text--bold text--sm line_height">Date</label>
+              <input class="input" type="text" placeholder="Select your date" onfocus="(this.type='date')">
             </div>
           </div>
           <div class="text_container select_block__time_block">
             <p class="text--bold text--sm line_height">Time</p>
-            <select name="time" id="time"
-              class="order--input select--text text--muted text--xs text--normal line_height--28">
-              <option class="select--text" value="" hidden>select your time</option>
+            <select name="time" id="time" class="input select--text text--muted text--xs text--normal line_height--28">
+              <option class="select--text" value="" hidden>Select your time</option>
               <option value="08:00">08:00</option>
               <option value="09:00">09:00</option>
               <option value="10:00">10:00</option>
@@ -118,15 +110,15 @@
         </div>
         <div class="rental_info__radio_input">
           <input type="radio" id="rent-input" name="rent-input">
-          <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-of</label>
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
         </div>
         <div class="rental_info__select_block">
           <div class="select_block__location_date_time">
             <div class="text_container ">
               <p class="text--bold text--sm line_height">Location</p>
               <select name="location" id="location"
-                class="order--input select--text text--muted text--xs text--normal line_height--28">
-                <option value="" hidden>select your city</option>
+                class="input select--text text--muted text--xs text--normal line_height--28">
+                <option value="" hidden>Select your city</option>
                 <option value="kyiv">KYIV</option>
                 <option value="kyiv">KYIV</option>
                 <option value="kyiv">KYIV</option>
@@ -137,21 +129,13 @@
             </div>
             <div class="text_container ">
               <p class="text--bold text--sm line_height">Date</p>
-              <select name="data" id="data"
-                class="order--input select--text text--muted text--xs text--normal line_height--28">
-                <option value="" hidden>select your date</option>
-                <option value="23.09">07 october</option>
-                <option value="24.09">08 october</option>
-                <option value="25.09">09 october</option>
-                <option value="26.09">10 october</option>
-              </select>
+              <input class="input" type="text" placeholder="Select your date" onfocus="(this.type='date')">
             </div>
           </div>
           <div class="text_container select_block__time_block">
             <p class="text--bold text--sm line_height">Time</p>
-            <select name="time" id="time"
-              class="order--input select--text text--muted text--xs text--normal line_height--28">
-              <option value="" hidden>select your time</option>
+            <select name="time" id="time" class="input select--text text--muted text--xs text--normal line_height--28">
+              <option value="" hidden>Select your time</option>
               <option value="08:00">08:00</option>
               <option value="09:00">09:00</option>
               <option value="10:00">10:00</option>
@@ -166,10 +150,10 @@
           </div>
         </div>
       </div>
-      <div class="order__payment_method">
+      <div class="form">
         <div class="payment_info__text">
           <p class="text--md text--bold line_height--md ">Payment Method</p>
-          <div class="title_text">
+          <div class="form__subtitle">
             <p class="text--fw500 text--xs text--xs text--muted">Please enter your payment method</p>
             <p class="text--fw500 text--xs text--xs text--muted">Step 3 of 4</p>
           </div>
@@ -180,26 +164,27 @@
               <input id="payment-input" name="payment-input" type="radio">
               <label for="paymenth-input">Credit card</label>
             </div>
-            <img src="img/Visa .png" alt="visa_logo">
+            <img src="../img/Visa .png" alt="visa_logo">
           </div>
           <div class="visa_block__number_exp_date">
             <div class="text_container">
-              <p class="text--semi_bold text--sm line_height--sm">Card Number</p>
-              <input class="payment--input" type="text" name="card_number" id="card_number" placeholder="Card number">
+              <label for="card_number" class="text--semi_bold text--sm line_height--sm">Card Number</label>
+              <input class="input--sm input" type="text" name="card_number" id="card_number" placeholder="Card number">
             </div>
             <div class="text_container">
-              <p class="text--semi_bold text--sm line_height--sm">Expiration Date</p>
-              <input class="payment--input" type="date" name="exp_date" id="exp_date">
+              <label for="exp_date" class="text--semi_bold text--sm line_height--sm">Expiration Date</label>
+              <input class="input--sm input" type="text" name="exp_date" id="exp_date" placeholder="MM/DD/YYYY"
+                onfocus="(this.type='date')">
             </div>
           </div>
           <div class="visa_block__holder_cvc">
             <div class="text_container">
-              <p class="text--semi_bold text--sm line_height--sm">Card Holder</p>
-              <input class="payment--input" type="name" name="card_holder" id="card_holder" placeholder="Card holder">
+              <label for="card_holder" class="text--semi_bold text--sm line_height--sm">Card Holder</label>
+              <input class="input--sm input" type="name" name="card_holder" id="card_holder" placeholder="Card holder">
             </div>
             <div class="text_container">
-              <p class="text--semi_bold text--sm line_height--sm">CVC</p>
-              <input class="payment--input" type="password" name="CVC" id="cvc" placeholder="CVC">
+              <label for="CVC" class="text--semi_bold text--sm line_height--sm">CVC</label>
+              <input class="input--sm input" type="password" name="CVC" id="cvc" placeholder="CVC">
             </div>
           </div>
         </div>
@@ -208,40 +193,42 @@
             <input id="payment-input" name="payment-input" type="radio">
             <label for="payment-input">PayPal</label>
           </div>
-          <img src="img/PayPal.png" alt="paypal_logo">
+          <img src="../img/PayPal.png" alt="paypal_logo">
         </div>
         <div class="paymenth_method__bitcoin">
           <div>
             <input id="payment-input" name="payment-input" type="radio">
             <label for="payment-input">Bitcoin</label>
           </div>
-          <img src="img/Bitcoin.png" alt="bitcoin_logo">
+          <img src="../img/Bitcoin.png" alt="bitcoin_logo">
         </div>
       </div>
 
-      <div class="order__confirmation">
+      <div class="form">
         <div class="confirmation_info__text">
           <p class="text--md text--bold line_height--md ">Confirmation</p>
-          <div class="title_text">
+          <div class="form__subtitle">
             <p class="text--fw500 text--xs text--xs text--muted">We are getting to the end. Just few clicks and your
               rental is ready</p>
             <p class="text--fw500 text--xs text--xs text--muted">Step 4 of 4</p>
           </div>
         </div>
         <div class="confirmation__agree_list">
-          <div class="agree_list__check text--bold text--sm line_height--sm">
-            <input class="order_check" type="checkbox" name="spam_agreement" id="spam_agreement">
-            <label for="spam_agreement">I agree with sending an Marketing and newsletter emails. No spam,
+          <div class="agree_list__check">
+            <input class="checkbox" type="checkbox" name="spam_agreement" id="spam_agreement">
+            <label class="text--bold text--sm line_height--sm" for="spam_agreement">I agree with sending an Marketing
+              and newsletter emails. No spam,
               promised!</label>
           </div>
-          <div class="agree_list__check text--bold text--sm line_height--sm">
-            <input class="order_check" type="checkbox" name="privacy_policy" id="privacy_policy">
-            <label for="privacy_policy">I agree with our terms and conditions and privacy policy.</label>
+          <div class="agree_list__check">
+            <input class="checkbox" type="checkbox" name="privacy_policy" id="privacy_policy">
+            <label class="text--bold text--sm line_height--sm" for="privacy_policy">I agree with our terms and
+              conditions and privacy policy.</label>
           </div>
         </div>
-        <button class="button button-primary button text text--bold ">Rent Now</button>
+        <input class="button button-primary text text--bold" type="button" value="Rent Now">
         <div class="confirmation__safe_data">
-          <img src="img/security_safety.png" alt="safety_icon">
+          <img src="../img/security_safety.png" alt="safety_icon">
           <div class="safe_data__info__text">
             <p class="text--md text--bold line_height--md ">All your data are safe</p>
             <p class="text--fw500 text--xs text--xs text--muted">We are using the most advanced security to provide you
@@ -257,18 +244,18 @@
           the price of your rental car.</p>
       </div>
       <div class="rental_summary__car_outlook">
-        <img src="img/Look_car.png" alt="small_nissan_gtr">
+        <img src="../img/Look_car.png" alt="small_nissan_gtr">
         <div class="car_outlook__name_rating">
           <div class="name_rating__title">
             <h2 class="title__nissan text--bold text--xl">Nissan GT-R</h2>
           </div>
           <div class="name_rating__rating">
             <div class="rating__stars-all">
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/stargold.png" alt="star" />
-              <img class="stars" src="img/starfree.png" alt="emptystar" />
+              <img class="stars" src="../img/stargold.png" alt="star" />
+              <img class="stars" src="../img/stargold.png" alt="star" />
+              <img class="stars" src="../img/stargold.png" alt="star" />
+              <img class="stars" src="../img/stargold.png" alt="star" />
+              <img class="stars" src="../img/starfree.png" alt="emptystar" />
             </div>
             <p class="rating__reviewers_count text--xs text--normal line_height--sm">440+ Reviewer</p>
           </div>
@@ -284,8 +271,8 @@
         <p class="text--semi_bold text--sm line_height--sm">$0</p>
       </div>
       <div class="rental_summary__apply_now">
-        <p class="text--semi_bold text--muted text--xs line_height--sm">Apply promo code</p>
-        <p class="text--semi_bold text--xs line_height--sm">Apply now</p>
+        <input class="input" type="text" name="promo_code" id="promo_cod" placeholder="Apply promo code">
+        <button class="bottom--apply text--semi_bold text--xs line_height--sm">Apply now</button>
       </div>
       <div class="rental_summary__total_price">
         <div>
@@ -298,83 +285,56 @@
       </div>
     </div>
   </main>
-
   <footer class="footer">
     <div class="footer__info_bar">
       <div class="info_bar__text_info">
-        <a href="index.html" class="botton_logo text--semi_bold text--xl">MORENT</a>
+        <a href="../index.html" class="botton_logo text--semi_bold text--xl">MORENT</a>
         <p class="text_info__text line_height--32 text--fw500 text--sm">Our vision is to provide convenience
           and help increase
           your sales business.</p>
       </div>
       <div class="info_bar__help">
-        <div class="help__about">
-          <h2 class="text--semi_bold text--md line_height--md">
+        <div>
+          <p class="text--semi_bold text--md line_height--md">
             About
-          </h2>
-          <div class="footer_text">
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">How it work</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Featured</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Partnership</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Business Relation</a>
-            </p>
+          </p>
+          <div class="info_text">
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">How it work</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Featured</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Partnership</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Business Relation</a>
           </div>
         </div>
-        <div class="help__community">
-          <h2 class="text--semi_bold text--md line_height--md">
+        <div>
+          <p class="text--semi_bold text--md line_height--md">
             Community
-          </h2>
-          <div class="footer_text">
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Events</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Blog</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Podcast</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Invite a friend</a>
-            </p>
+          </p>
+          <div class="info_text">
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Events</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Blog</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Podcast</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Invite a friend</a>
           </div>
         </div>
-        <div class="help__socials">
-          <h2 class="text--semi_bold text--md line_height--md">
+        <div>
+          <p class="text--semi_bold text--md line_height--md">
             Socials
-          </h2>
-          <div class="footer_text">
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Discord</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Instagram</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Twitter</a>
-            </p>
-            <p class="text--fw500 text--sm line_height--sm">
-              <a class="link" href="">Facebook</a>
-            </p>
+          </p>
+          <div class="info_text">
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Discord</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Instagram</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Twitter</a>
+            <a class="link link--block text--fw500 text--sm line_height--sm" href="">Facebook</a>
           </div>
         </div>
       </div>
     </div>
     <hr class="footer__line">
     <div class="footer__rights">
-      <div class="rights__left">
-        <p class="text--sm text--semi_bold line_height--32">©2022 MORENT. All rights reserved</p>
-      </div>
+      <p class="text--sm text--semi_bold line_height--32">©2022 MORENT. All rights reserved</p>
       <div class="rights__right">
-        <p class="text--sm text--semi_bold line_height--32">Privacy & Policy</p>
-        <p class="text--sm text--semi_bold line_height--32">Terms & Condition</p>
+        <a href="" class="link--black text--sm text--semi_bold line_height--32">Privacy & Policy</a>
+        <a href="" class="link--black text--sm text--semi_bold line_height--32">Terms & Condition</a>
       </div>
     </div>
   </footer>
