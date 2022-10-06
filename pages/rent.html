@@ -25,7 +25,7 @@
       </div>
       <div class="icon_circle icon--sm">
         <img class="size__setting right_icon" src="../img/user_setting.png" alt="setting_icon">
-      </div class>
+      </div>
       <img class="icon_circle avatar" src="../img/Alex.png" alt="Alex_user_icon">
     </div>
   </header>
@@ -38,116 +38,112 @@
           <p class="text--fw500 text--xs text--xs text--muted">Please enter your billing info</p>
           <p class="text--fw500 text--xs text--xs text--muted">Step 1 of 4</p>
         </div>
-        <div class="form__billing_info">
-          <div class="text_container">
+        <div class="form__row">
+          <div>
             <label for="name" class="text--semi_bold text--sm line_height--sm">Name</label>
-            <input class="input" type="name" name="name" id="name" placeholder="Your name">
+            <input class="mg_top--16 input" type="text" name="name" id="name" placeholder="Your name">
           </div>
-          <div class="text_container">
+          <div>
             <label for="number" class="text--semi_bold text--sm line_height--sm">Phone Number</label>
-            <input class="input" type="tel" name="number" id="number" placeholder="Your number">
+            <input class="mg_top--16 input" type="tel" name="number" id="number" placeholder="Your number">
           </div>
         </div>
-        <div class="form__billing_info">
-          <div class="text_container">
+        <div class="form__row">
+          <div>
             <label for="addres" class="text--semi_bold text--sm line_height--sm">Address</label>
-            <input class="input" type="address" name="address" id="address" placeholder="Address">
+            <input class="mg_top--16 input" type="text" name="address" id="address" placeholder="Address">
           </div>
-          <div class="text_container">
+          <div>
             <label for="town" class="text--semi_bold text--sm line_height--sm">Town/City</label>
-            <input class="input" type="text" name="town" id="town" placeholder="Town or city">
+            <input class="mg_top--16 input" type="text" name="town" id="town" placeholder="Town or city">
           </div>
         </div>
       </div>
       <div class="form">
-        <div class="rental_info__text">
-          <p class="text--md text--bold line_height--md ">Rental Info</p>
-          <div class="form__subtitle">
-            <p class="text--fw500 text--xs text--xs text--muted">Please select your rental date</p>
-            <p class="text--fw500 text--xs text--xs text--muted">Step 2 of 4</p>
-          </div>
+        <p class="text--md text--bold line_height--md ">Rental Info</p>
+        <div class="form__subtitle">
+          <p class="text--fw500 text--xs text--xs text--muted">Please select your rental date</p>
+          <p class="text--fw500 text--xs text--xs text--muted">Step 2 of 4</p>
         </div>
-        <div class="rental_info__radio_input">
+        <div class="form__radio_input">
           <input type="radio" id="rent-input" name="rent-input" checked>
-          <label for="rent-input" class="text--semi_bold text--sm line_height" for="rent-input">Pick-up</label>
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-up</label>
         </div>
-        <div class="rental_info__select_block">
-          <div class="select_block__location_date_time">
-            <div class="text_container">
-              <label for="location" class="text--bold text--sm line_height">Location</label>
-              <select name="location" id="location"
-                class="input select--text text--muted text--xs text--normal line_height--28">
-                <option value="" hidden>Select your city</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-              </select>
-            </div>
-            <div class="text_container">
-              <label for="date" class="text--bold text--sm line_height">Date</label>
-              <input class="input" type="text" placeholder="Select your date" onfocus="(this.type='date')">
-            </div>
-          </div>
-          <div class="text_container select_block__time_block">
-            <p class="text--bold text--sm line_height">Time</p>
-            <select name="time" id="time" class="input select--text text--muted text--xs text--normal line_height--28">
-              <option class="select--text" value="" hidden>Select your time</option>
-              <option value="08:00">08:00</option>
-              <option value="09:00">09:00</option>
-              <option value="10:00">10:00</option>
-              <option value="11:00">11:00</option>
-              <option value="12:00">12:00</option>
-              <option value="13:00">13:00</option>
-              <option value="14:00">15:00</option>
-              <option value="16:00">16:00</option>
-              <option value="17:00">17:00</option>
-              <option value="18:00">18:00</option>
+        <div class="form__row">
+          <div>
+            <label for="location" class="text--bold text--sm line_height">Location</label>
+            <select name="location" id="location"
+              class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
+              <option value="" hidden>Select your city</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
             </select>
           </div>
+          <div>
+            <label for="date" class="text--bold text--sm line_height">Date</label>
+            <input class="input mg_top--16" type="text" placeholder="Select your date" onfocus="(this.type='date')">
+          </div>
         </div>
-        <div class="rental_info__radio_input">
+        <div class=" select_block__time_block">
+          <p class="text--bold text--sm line_height">Time</p>
+          <select name="time" id="time"
+            class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
+            <option class="select--text" value="" hidden>Select your time</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+          </select>
+        </div>
+        <div class="form__radio_input">
           <input type="radio" id="rent-input" name="rent-input">
           <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
         </div>
-        <div class="rental_info__select_block">
-          <div class="select_block__location_date_time">
-            <div class="text_container ">
-              <p class="text--bold text--sm line_height">Location</p>
-              <select name="location" id="location"
-                class="input select--text text--muted text--xs text--normal line_height--28">
-                <option value="" hidden>Select your city</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-                <option value="kyiv">KYIV</option>
-              </select>
-            </div>
-            <div class="text_container ">
-              <p class="text--bold text--sm line_height">Date</p>
-              <input class="input" type="text" placeholder="Select your date" onfocus="(this.type='date')">
-            </div>
-          </div>
-          <div class="text_container select_block__time_block">
-            <p class="text--bold text--sm line_height">Time</p>
-            <select name="time" id="time" class="input select--text text--muted text--xs text--normal line_height--28">
-              <option value="" hidden>Select your time</option>
-              <option value="08:00">08:00</option>
-              <option value="09:00">09:00</option>
-              <option value="10:00">10:00</option>
-              <option value="11:00">11:00</option>
-              <option value="12:00">12:00</option>
-              <option value="13:00">13:00</option>
-              <option value="14:00">15:00</option>
-              <option value="16:00">16:00</option>
-              <option value="17:00">17:00</option>
-              <option value="18:00">18:00</option>
+        <div class="form__row">
+          <div>
+            <p class="text--bold text--sm line_height">Location</p>
+            <select name="location" id="location"
+              class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
+              <option value="" hidden>Select your city</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
             </select>
           </div>
+          <div>
+            <p class="text--bold text--sm line_height">Date</p>
+            <input class="input mg_top--16" type="text" placeholder="Select your date" onfocus="(this.type='date')">
+          </div>
+        </div>
+        <div class=" select_block__time_block">
+          <p class="text--bold text--sm line_height">Time</p>
+          <select name="time" id="time"
+            class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
+            <option value="" hidden>Select your time</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+          </select>
         </div>
       </div>
       <div class="form">
@@ -167,24 +163,26 @@
             <img src="../img/Visa .png" alt="visa_logo">
           </div>
           <div class="visa_block__number_exp_date">
-            <div class="text_container">
+            <div>
               <label for="card_number" class="text--semi_bold text--sm line_height--sm">Card Number</label>
-              <input class="input--sm input" type="text" name="card_number" id="card_number" placeholder="Card number">
+              <input class="mg_top--16 input--sm input" type="text" name="card_number" id="card_number"
+                placeholder="Card number">
             </div>
-            <div class="text_container">
+            <div>
               <label for="exp_date" class="text--semi_bold text--sm line_height--sm">Expiration Date</label>
-              <input class="input--sm input" type="text" name="exp_date" id="exp_date" placeholder="MM/DD/YYYY"
-                onfocus="(this.type='date')">
+              <input class="mg_top--16 input--sm input" type="text" name="exp_date" id="exp_date"
+                placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
             </div>
           </div>
           <div class="visa_block__holder_cvc">
-            <div class="text_container">
+            <div>
               <label for="card_holder" class="text--semi_bold text--sm line_height--sm">Card Holder</label>
-              <input class="input--sm input" type="name" name="card_holder" id="card_holder" placeholder="Card holder">
+              <input class="mg_top--16 input--sm input" type="text" name="card_holder" id="card_holder"
+                placeholder="Card holder">
             </div>
-            <div class="text_container">
+            <div>
               <label for="CVC" class="text--semi_bold text--sm line_height--sm">CVC</label>
-              <input class="input--sm input" type="password" name="CVC" id="cvc" placeholder="CVC">
+              <input class="mg_top--16 input--sm input" type="password" name="CVC" id="cvc" placeholder="CVC">
             </div>
           </div>
         </div>
@@ -238,7 +236,7 @@
       </div>
     </div>
     <div class="main__rental_summary">
-      <div class="rental_summary__info_text">
+      <div class="rental_summary__help__link_info">
         <p class="text--md text--bold line_height--md ">Rental Summary</p>
         <p class="text--fw500 text--xs text--xs text--muted">Prices may change depending on the length of the rental and
           the price of your rental car.</p>
@@ -298,7 +296,7 @@
           <p class="text--semi_bold text--md line_height--md">
             About
           </p>
-          <div class="info_text">
+          <div class="help__link_info">
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">How it work</a>
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Featured</a>
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Partnership</a>
@@ -309,7 +307,7 @@
           <p class="text--semi_bold text--md line_height--md">
             Community
           </p>
-          <div class="info_text">
+          <div class="help__link_info">
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Events</a>
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Blog</a>
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Podcast</a>
@@ -320,7 +318,7 @@
           <p class="text--semi_bold text--md line_height--md">
             Socials
           </p>
-          <div class="info_text">
+          <div class="help__link_info">
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Discord</a>
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Instagram</a>
             <a class="link link--block text--fw500 text--sm line_height--sm" href="">Twitter</a>

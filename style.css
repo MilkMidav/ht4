@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: font jakarta regular;
   src: url(Font/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
@@ -85,6 +89,10 @@ body {
   letter-spacing: 0.1em;
 }
 
+.mg_top--16 {
+  margin-top: 16px;
+}
+
 
 .button-primary {
   border: none;
@@ -123,7 +131,6 @@ main {
   max-width: 1440px;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
 }
 
 .header {
@@ -137,7 +144,6 @@ main {
 }
 
 .header__left_side {
-  box-sizing: border-box;
   max-width: 704px;
   width: 100%;
   justify-content: space-between;
@@ -158,7 +164,6 @@ main {
   max-height: 44px;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -254,7 +259,6 @@ main {
 
 
 .sidebar {
-  box-sizing: border-box;
   max-width: 360px;
   height: 1980px;
   width: 360px;
@@ -263,9 +267,7 @@ main {
   color: #3D5278;
 }
 
-.sidebar__type {
-  box-sizing: border-box;
-}
+.sidebar__type {}
 
 .checkbox {
   height: 20px;
@@ -275,7 +277,12 @@ main {
 
 .sidebar__filters>div {
   display: flex;
+  align-items: center;
   margin-top: 32px;
+}
+
+.sidebar__filters>div>label {
+  padding-left: 10px;
 }
 
 .check__number {
@@ -290,13 +297,12 @@ main {
   margin-top: 56px;
 }
 
-.sidebar_range {
+.input--range {
   margin: 32px 0 16px 0;
   width: 100%;
 }
 
 .main__section {
-  box-sizing: border-box;
   margin: 32px 0 0 32px;
   max-width: 1016px;
 }
@@ -340,7 +346,6 @@ main {
   padding: 5px;
   border: blue solid 2px;
   border-radius: 10px;
-  box-sizing: border-box;
 }
 
 .stars {
@@ -348,7 +353,6 @@ main {
 }
 
 .description {
-  box-sizing: border-box;
   max-width: 492px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -388,7 +392,6 @@ main {
 
 .description__capabilities {
   display: table;
-  box-sizing: border-box;
   width: 483px;
 }
 
@@ -543,7 +546,6 @@ main {
   height: 388px;
   border-radius: 10px;
   padding: 24px;
-  box-sizing: border-box;
   background: #FFFFFF;
 }
 
@@ -662,7 +664,6 @@ main {
 }
 
 .footer__info_bar {
-  box-sizing: border-box;
   padding: 80px 60px 60px;
   display: flex;
   justify-content: space-between;
@@ -690,7 +691,7 @@ main {
   margin-top: 20px;
 }
 
-.info_text {
+.help__link_info {
   padding-top: 38px;
   width: 152px;
 }
@@ -724,7 +725,6 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  box-sizing: border-box;
   padding: 48px 60px 60px;
 }
 
@@ -760,7 +760,6 @@ main {
 
 .input {
   padding-left: 32px;
-  box-sizing: border-box;
   background: #F6F7F9;
   border-radius: 10px;
   border: none;
@@ -782,7 +781,6 @@ main {
 }
 
 .main__order {
-  box-sizing: border-box;
   max-width: 852px;
   margin: 32px 32px 0 32px;
   width: 100%;
@@ -798,22 +796,14 @@ main {
   justify-content: space-between;
 }
 
-.form__billing_info {
+.form__row {
   display: flex;
   justify-content: space-between;
-  height: 92px;
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
-.text_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 92px;
-}
 
 .form {
-  box-sizing: border-box;
   background-color: #ffffff;
   width: 100%;
   padding: 24px;
@@ -827,7 +817,7 @@ main {
   height: 92px;
 }
 
-.rental_info__radio_input {
+.form__radio_input {
   margin-top: 32px;
 }
 
@@ -845,12 +835,7 @@ option {
   padding-left: 32px;
 }
 
-.rental_info__select_block {
-  margin-top: 24px;
-}
-
 .payment_method__visa_block {
-  box-sizing: border-box;
   background: #F6F7F9;
   padding: 24px;
   margin-top: 32px;
@@ -885,7 +870,6 @@ option {
 
 .paymenth_method__paypal,
 .paymenth_method__bitcoin {
-  box-sizing: border-box;
   background: #F6F7F9;
   border-radius: 10px;
   display: flex;
@@ -922,7 +906,6 @@ option {
 }
 
 .main__rental_summary {
-  box-sizing: border-box;
   background: #FFFFFF;
   margin: 32px 32px 0 0;
   border-radius: 10px;
