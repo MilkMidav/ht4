@@ -128,9 +128,8 @@ p {
 }
 
 main {
-  max-width: 1440px;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .header {
@@ -303,7 +302,8 @@ main {
 }
 
 .main__section {
-  margin: 32px 0 0 32px;
+  margin: auto;
+  align-content: center;
   max-width: 1016px;
 }
 
@@ -775,9 +775,10 @@ main {
 }
 
 .main {
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  margin: auto;
 }
 
 .main__order {
