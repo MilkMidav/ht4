@@ -301,6 +301,10 @@ main {
   width: 100%;
 }
 
+.display_block {
+  display: block;
+}
+
 .main__section {
   margin: auto;
   align-content: center;
@@ -759,6 +763,7 @@ main {
 /* style for input.html */
 
 .input {
+  display: block;
   padding-left: 32px;
   background: #F6F7F9;
   border-radius: 10px;
