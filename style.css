@@ -980,21 +980,23 @@ option {
 
 /* style for catalog.html */
 
-button {
-  all: unset;
-  cursor: pointer;
-}
+
 
 .input--xs {
   width: 116px;
   display: block;
 }
 
-.switch {
-  position: relative;
-  display: flex;
+.catalog {
   max-width: 1015px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog__switch {
+  position: relative;
+  display: flex;
   margin-top: 24px;
   justify-content: space-between;
 }
@@ -1029,6 +1031,8 @@ button {
 }
 
 .switch__button {
+  cursor: pointer;
+  border: none;
   display: flex;
   position: absolute;
   left: 480px;
@@ -1043,4 +1047,12 @@ button {
 
 .switch__button:hover {
   background-color: #0743f7;
+}
+
+.grid_container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 32px;
 }
