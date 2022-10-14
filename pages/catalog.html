@@ -33,7 +33,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="sidebar">
       <div class="sidebar__type">
         <p class="text--xxs text--muted letter_spacing--sm">TYPE</p>
@@ -104,89 +104,99 @@
         </div>
       </div>
     </div>
-    <div class="switch__container">
-      <div class="form__radio_input">
-        <input type="radio" id="rent-input" name="rent-input">
-        <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
+    <div class="switch">
+      <div class="switch__rent_filter">
+        <div class="rent_filter__radio_input">
+          <input type="radio" id="rent-input" name="rent-input">
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Pick-Up</label>
+        </div>
+        <div class="rent_filter__list">
+          <div>
+            <p class="text--bold text--sm line_height">Location</p>
+            <select name="location" id="location"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option value="" hidden>Select your city</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+            </select>
+          </div>
+          <div>
+            <label for="date" class="text--bold text--sm line_height">Date</label>
+            <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
+              onfocus="(this.type='date')">
+          </div>
+          <div>
+            <p class="text--bold text--sm line_height">Time</p>
+            <select name="time" id="time"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option class="" value="" hidden>Select your time</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div>
-        <div>
-          <p class="text--bold text--sm line_height">Location</p>
-          <select name="location" id="location"
-            class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
-            <option value="" hidden>Select your city</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-          </select>
+      <button class="switch__button">
+        <img src="../img/Swap.png" alt="swap_arrow">
+      </button>
+      <div class="switch__rent_filter">
+        <div class="rent_filter__radio_input">
+          <input type="radio" id="rent-input" name="rent-input">
+          <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
         </div>
-        <div>
-          <label for="date" class="text--bold text--sm line_height">Date</label>
-          <input class="input mg_top--16" type="text" placeholder="Select your date" onfocus="(this.type='date')">
-        </div>
-        <div>
-          <p class="text--bold text--sm line_height">Time</p>
-          <select name="time" id="time"
-            class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
-            <option class="select--text" value="" hidden>Select your time</option>
-            <option value="08:00">08:00</option>
-            <option value="09:00">09:00</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="12:00">12:00</option>
-            <option value="13:00">13:00</option>
-            <option value="14:00">15:00</option>
-            <option value="16:00">16:00</option>
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-          </select>
+        <div class="rent_filter__list">
+          <div>
+            <p class="text--bold text--sm line_height">Location</p>
+            <select name="location" id="location"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option value="" hidden>Select your city</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+              <option value="kyiv">KYIV</option>
+            </select>
+          </div>
+          <div>
+            <label for="date" class="text--bold text--sm line_height">Date</label>
+            <input class="input--none_border input--xs mg_top--8" type="text" placeholder="Select your date"
+              onfocus="(this.type='date')">
+          </div>
+          <div>
+            <p class="text--bold text--sm line_height">Time</p>
+            <select name="time" id="time"
+              class="input--none_border mg_top--8 input--xs  text--muted text--xxs text--normal line_height--28">
+              <option class="" value="" hidden>Select your time</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
-    <div class="switch__container">
-      <div class="form__radio_input">
-        <input type="radio" id="rent-input" name="rent-input">
-        <label class="text--semi_bold text--sm line_height" for="rent-input">Drop-off</label>
-      </div>
-      <div>
-        <div>
-          <p class="text--bold text--sm line_height">Location</p>
-          <select name="location" id="location"
-            class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
-            <option value="" hidden>Select your city</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-            <option value="kyiv">KYIV</option>
-          </select>
-        </div>
-        <div>
-          <label for="date" class="text--bold text--sm line_height">Date</label>
-          <input class="input mg_top--16" type="text" placeholder="Select your date" onfocus="(this.type='date')">
-        </div>
-        <div>
-          <p class="text--bold text--sm line_height">Time</p>
-          <select name="time" id="time"
-            class="mg_top--16 input select--text text--muted text--xs text--normal line_height--28">
-            <option class="select--text" value="" hidden>Select your time</option>
-            <option value="08:00">08:00</option>
-            <option value="09:00">09:00</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="12:00">12:00</option>
-            <option value="13:00">13:00</option>
-            <option value="14:00">15:00</option>
-            <option value="16:00">16:00</option>
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-          </select>
-        </div>
-      </div>
+    <div class="grid_container">
+
     </div>
   </main>
   <footer class="footer">
